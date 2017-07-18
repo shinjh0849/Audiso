@@ -4,7 +4,7 @@ declare var Hammer: any;
 var isDoubleTap = false
 
 @Directive({
-  selector: '[doubleTap], [singleTap]'
+  selector: '[doubleTap]'
 })
 
 export class DoubleTapDirective implements OnInit, OnDestroy {
