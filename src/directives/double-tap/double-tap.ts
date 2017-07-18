@@ -9,40 +9,34 @@ var isDoubleTap = false
 
 export class DoubleTapDirective implements OnInit, OnDestroy {
   el: HTMLElement;
-  el2: HTMLElement;
-  sTapGesture: Gesture;
-  dTapGesture: Gesture;
+  tapGesture: Gesture;
+
   
-
-
   @Output()
   doubleTap: EventEmitter<any> = new EventEmitter();
-  singleTap: EventEmitter<any> = new EventEmitter();
+
     
   
-  constructor(el: ElementRef, el2: ElementRef) {
+  constructor(el: ElementRef) {
     this.el = el.nativeElement;
-    this.el2 = el2.nativeElement;
   }
 
   ngOnInit() { 
-    this.dTapGesture = new Gesture(this.el2, {
+    this.tapGesture = new Gesture(this.el, {
       recognizers: [
         [Hammer.Tap, {taps: 2}]
       ]
     });
-    this.dTapGesture.listen();
-    this.dTapGesture.on('tap', e => {
+    this.tapGesture.listen();
+    this.tapGesture.on('tap', e => {
       this.doubleTap.emit(e);
-      console.log(Hammer.Tap);
     });
     
     
   }
 
   ngOnDestroy() {
-    this.sTapGesture.destroy();
-    this.dTapGesture.destroy();
+    this.tapGesture.destroy();
   }
 
 }
