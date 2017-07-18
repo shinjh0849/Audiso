@@ -6,17 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-<<<<<<< HEAD
+
+import { T5Page } from "../pages/t5/t5";
 import { T6Page } from '../pages/t6/t6';
 import { T7Page } from '../pages/t7/t7';
-import { T12Page } from '../pages/t12/t12';
-=======
-import { Tut13Page } from '../pages/tut13/tut13';
-import { Tut18Page } from '../pages/tut18/tut18';
-import { T5Page } from "../pages/t5/t5";
 import { T8Page } from "../pages/t8/t8";
 import { T9Page } from "../pages/t9/t9";
->>>>>>> EunJi
+import { T12Page } from '../pages/t12/t12';
 
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
 import { LongPressDirective } from '../directives/long-press/long-press';
@@ -33,20 +29,12 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
   declarations: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-
+    T5Page,
     T6Page,
     T7Page,
-
-    T12Page,
-=======
-    Tut13Page,
-    Tut18Page,
-    T5Page,
     T8Page,
     T9Page,
->>>>>>> EunJi
-    
+    T12Page,
     DoubleTapDirective,
     LongPressDirective,
     TapnDoubleTapDirective,
@@ -62,20 +50,12 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
   entryComponents: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-
+    T5Page,
     T6Page,
     T7Page,
-
-    T12Page,
-=======
-    Tut13Page,
-    Tut18Page,
-    T5Page,
     T8Page,
-    T9Page
->>>>>>> EunJi
-    
+    T9Page,
+    T12Page,
   ],
   providers: [
     StatusBar,
