@@ -1,12 +1,14 @@
 import { OnInit, Component, ViewChild, Directive } from '@angular/core';
 import { NavController, NavParams, Slides, IonicApp } from 'ionic-angular';
-import { Tut13Page } from '../tut13/tut13';
-import { LongPressDirective } from '../../directives/long-press/long-press';
+
+import { T6Page } from '../t6/t6';
+import { T7Page } from '../t7/t7';
+
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [Tut13Page],
+  providers: [T7Page],
   
 })
 
@@ -22,12 +24,6 @@ export class HomePage {
   slideChanged(){
     let currentIndex = this.slides.getActiveIndex();
     console.log('Current index is', currentIndex);
-
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
+    this.navCtrl.push( T6Page, {}, {animate: false} );
   }
-
-  onLongPress(e){
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
-  }
-
 }

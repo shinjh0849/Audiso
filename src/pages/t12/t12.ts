@@ -3,19 +3,16 @@ import { NavController, NavParams, Slides } from 'ionic-angular';
 import { LongPressDirective } from '../../directives/long-press/long-press';
 import { DoubleTapDirective } from '../../directives/double-tap/double-tap';
 import { ShortPressDirective } from '../../directives/short-press/short-press';
-import { Tut13Page } from '../tut13/tut13';
+import { T7Page } from '../t7/t7';
 import { HomePage } from '../home/home';
 
 
-
-
-
 @Component({
-  selector: 'page-tut18',
-  templateUrl: 'tut18.html'
+  selector: 'page-t12',
+  templateUrl: 't12.html'
 })
 
-export class Tut18Page {
+export class T12Page {
 
   @ViewChild(Slides) slides: Slides;
 
@@ -35,13 +32,13 @@ export class Tut18Page {
 
   onShortPress(e){
     console.log("shortPress from ShortPressDirective")
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
+    this.navCtrl.push( T7Page, {}, {animate: false} );
   }
 
-    slideChanged(){
+  slideChanged(){
     let currentIndex = this.slides.getActiveIndex();
     console.log('Current index is', currentIndex);
 
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
+    this.navCtrl.push( T7Page, {}, {animate: false} );
   }
 }

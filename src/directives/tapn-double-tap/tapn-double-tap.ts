@@ -2,7 +2,7 @@ import { Directive, ElementRef } from '@angular/core';
 import { Gesture } from 'ionic-angular/gestures/gesture';
 import { DoubleTapDirective } from '../double-tap/double-tap';
 import { HomePage } from '../../pages/home/home';
-import { Tut13Page } from '../../pages/tut13/tut13';
+
 
 @Directive({
   selector: '[tapn-double-tap]'
@@ -56,7 +56,7 @@ export class TapnDoubleTapDirective {
     
     vm.onTap = function (inc) {
       console.log("onTap from ctrl")
-      this.navCtrl.push( Tut13Page, {}, {animate: false} );
+      //this.navCtrl.push( Tut13Page, {}, {animate: false} );
     }
     
     vm.onDoubleTap = function (inc) {

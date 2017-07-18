@@ -6,9 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { Tut13Page } from '../pages/tut13/tut13';
-import { Tut18Page } from '../pages/tut18/tut18';
-
+import { T6Page } from '../pages/t6/t6';
+import { T7Page } from '../pages/t7/t7';
+import { T12Page } from '../pages/t12/t12';
 
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
 import { LongPressDirective } from '../directives/long-press/long-press';
@@ -17,12 +17,16 @@ import { ShortPressDirective } from '../directives/short-press/short-press';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    Tut13Page,
-    Tut18Page,
+
+    T6Page,
+    T7Page,
+
+    T12Page,
     
     DoubleTapDirective,
     LongPressDirective,
@@ -37,8 +41,11 @@ import { ShortPressDirective } from '../directives/short-press/short-press';
   entryComponents: [
     MyApp,
     HomePage,
-    Tut13Page,
-    Tut18Page,
+
+    T6Page,
+    T7Page,
+
+    T12Page,
     
   ],
   providers: [

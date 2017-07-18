@@ -20,7 +20,7 @@ export class ShortPressDirective implements OnInit, OnDestroy {
   ngOnInit() {
     this.pressGesture = new Gesture(this.el, {
       recognizers: [
-        [Hammer.Press, {time: 100}],
+        [Hammer.Press, {time: 150}],
       ]
     });
     this.pressGesture.listen();
