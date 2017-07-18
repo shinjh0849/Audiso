@@ -5,6 +5,7 @@ import { DoubleTapDirective } from '../../directives/double-tap/double-tap';
 import { ShortPressDirective } from '../../directives/short-press/short-press';
 import { Tut13Page } from '../tut13/tut13';
 import { HomePage } from '../home/home';
+import { T5Page } from "../t5/t5";
 
 
 
@@ -20,28 +21,30 @@ export class Tut18Page {
   @ViewChild(Slides) slides: Slides;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  
+
   }
+
+
 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tut18Page');
   }
 
-  onDoubleTap(e){
+  onDoubleTap(e) {
     console.log("singleTap from DoubleTapDirective")
-    this.navCtrl.push( HomePage, {}, {animate: false} );
+    this.navCtrl.push(HomePage, {}, { animate: false });
   }
 
-  onShortPress(e){
+  onShortPress(e) {
     console.log("shortPress from ShortPressDirective")
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
+    this.navCtrl.push(T5Page, {}, { animate: false });
   }
 
-    slideChanged(){
+  slideChanged() {
     let currentIndex = this.slides.getActiveIndex();
     console.log('Current index is', currentIndex);
 
-    this.navCtrl.push( Tut13Page, {}, {animate: false} );
+    this.navCtrl.push(Tut13Page, {}, { animate: false });
   }
 }

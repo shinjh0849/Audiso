@@ -8,12 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Tut13Page } from '../pages/tut13/tut13';
 import { Tut18Page } from '../pages/tut18/tut18';
-
+import { T5Page } from "../pages/t5/t5";
+import { T8Page } from "../pages/t8/t8";
+import { T9Page } from "../pages/t9/t9";
 
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
 import { LongPressDirective } from '../directives/long-press/long-press';
 import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-double-tap';
 import { ShortPressDirective } from '../directives/short-press/short-press';
+import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
+import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
+
 
 
 
@@ -23,11 +28,16 @@ import { ShortPressDirective } from '../directives/short-press/short-press';
     HomePage,
     Tut13Page,
     Tut18Page,
+    T5Page,
+    T8Page,
+    T9Page,
     
     DoubleTapDirective,
     LongPressDirective,
     TapnDoubleTapDirective,
-    ShortPressDirective
+    ShortPressDirective,
+    T5UpDownPanDirective,
+    T9LeftPanDirective
   ],
   imports: [
     BrowserModule,
@@ -39,6 +49,9 @@ import { ShortPressDirective } from '../directives/short-press/short-press';
     HomePage,
     Tut13Page,
     Tut18Page,
+    T5Page,
+    T8Page,
+    T9Page
     
   ],
   providers: [
