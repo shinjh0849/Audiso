@@ -7,11 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { T4Page } from '../pages/t4/t4';
 import { T5Page } from "../pages/t5/t5";
 import { T6Page } from '../pages/t6/t6';
 import { T7Page } from '../pages/t7/t7';
 import { T8Page } from "../pages/t8/t8";
 import { T9Page } from "../pages/t9/t9";
+import { T11Page } from '../pages/t11/t11';
 import { T12Page } from '../pages/t12/t12';
 
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
@@ -23,17 +25,17 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
 
 
 
-
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    T4Page,
     T5Page,
     T6Page,
     T7Page,
     T8Page,
     T9Page,
+    T11Page,
     T12Page,
     DoubleTapDirective,
     LongPressDirective,
@@ -50,11 +52,13 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
   entryComponents: [
     MyApp,
     HomePage,
+    T4Page,
     T5Page,
     T6Page,
     T7Page,
     T8Page,
     T9Page,
+    T11Page,
     T12Page,
   ],
   providers: [
