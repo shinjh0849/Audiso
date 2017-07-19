@@ -1,11 +1,14 @@
-<ion-content padding>
+
+<ion-content screen-pan (overDrag)="onTq()" (doubleTap) = "onDoubleTap($event)" (shortPress) = "onShortPress($event)">
+
   <div class = "bg"><img src = "assets/background.png"></div>
   <div class = "wc"><img src = "assets/bigWhiteCircle.png"></div>
   <div class = "tutorial"><img src = "assets/T11/TUTORIAL.png"></div>
   <div class = "maintext"><img src = "assets/T11/mainText.png"></div>
   <div class = "text"><img src = "assets/T11/text.png"></div>
   <div class = "dotC"><img src = "assets/T11/Dcircle.png"></div>
-  <div class = "roundC"><img src = "assets/T12/circle.png"></div>
+  <div class = "roundC"><img src = "assets/T11/circle.png" (overDrag)="onTq()"></div>
   <div class = "page"><img src = "assets/T11/Navigator_4_5.png"></div>
+
 </ion-content>
 

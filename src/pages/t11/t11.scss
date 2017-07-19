@@ -1,7 +1,7 @@
 page-t11 {
 
 .bg{
-    position: absolute;
+    position: fixed;
     padding: 0;
     border: 0;
     left: 0px;
@@ -9,6 +9,13 @@ page-t11 {
     width: 360px;
     height: 740px;
 }
+
+ *{
+         .scroll-content{
+            overflow: hidden !important;
+         }
+       
+    }
 
 .wc{
     position: fixed;
@@ -82,10 +89,10 @@ page-t11 {
 }
 
 .roundC{
-    position: fixed;
+    position: absolute;
     border: 0;
     padding: 0;
-    left: 201.39475px;
+    left: 201.39375px;
     top: 505.58125px;
     width: 82.52375px;
     height: 82.16875px;
