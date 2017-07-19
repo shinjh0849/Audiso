@@ -25,6 +25,6 @@ export class T2Page {
 
   onLongPress(e){
     console.log('longPress success and navigates to page-t12');
-    //this.navCtrl.push( T10Page, {}, {animate: false} );
+    this.navCtrl.push( T3Page, {}, {animate: false} );
   }
 }
