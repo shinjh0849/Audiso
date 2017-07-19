@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { T4Page } from '../pages/t4/t4';
 import { T5Page } from "../pages/t5/t5";
 import { T6Page } from '../pages/t6/t6';
 import { T7Page } from '../pages/t7/t7';
@@ -23,12 +24,11 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
 
 
 
-
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    T4Page,
     T5Page,
     T6Page,
     T7Page,
@@ -50,6 +50,7 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
   entryComponents: [
     MyApp,
     HomePage,
+    T4Page,
     T5Page,
     T6Page,
     T7Page,
