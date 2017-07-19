@@ -1,13 +1,31 @@
 page-home{
-    
-    .logo{
-    position:   fixed;
-    padding:    0;
-    border:     0;
-    left:       110px;
-    top:        286.85px;
-    width:      140px;
-    height:     122.4px;
+    *{
+        .scroll-content{
+            overflow: hidden !important;
+        }
+        
+    }
+
+    #logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80%;
+        width: 140px;
+        height: auto;
+        
+    }
+    #backG{
+        width:100%;
+        height:auto;
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+    }
+
+    @keyframes example {
+        from { left:0px; top:-2200px}
+        to {left:0px; top:0px}
     }
 }
 
