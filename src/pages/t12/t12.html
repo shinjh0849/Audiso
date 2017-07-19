@@ -1,6 +1,7 @@
 <body>
 <ion-content (doubleTap) = "onDoubleTap($event)"
-             (shortPress) = "onShortPress($event)">
+             (shortPress) = "onShortPress($event)"
+             screen-pan (overDrag) = "onOverDrag()">
 
     <div class = "bg"><img src = "assets/bg/배경.png"></div>
     <div class = "wc"><img src = "assets/bg/흰원.png"></div>

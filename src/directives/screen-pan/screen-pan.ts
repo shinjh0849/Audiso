@@ -12,7 +12,7 @@ import { DomController } from 'ionic-angular';
 })
 export class ScreenPanDirective {
 
- @Input('startLeft') startLeft: any;
+  @Input('startLeft') startLeft: any;
   @Input('startTop') startTop: any;
 
   @Output() overDrag: any = new EventEmitter();

@@ -34,10 +34,8 @@ export class T12Page {
     this.navCtrl.push( T7Page, {}, {animate: false} );
   }
 
-  slideChanged(){
-    let currentIndex = this.slides.getActiveIndex();
-    console.log('Current index is', currentIndex);
-
-    this.navCtrl.push( T7Page, {}, {animate: false} );
+  onOverDrag(){
+    this.navCtrl.pop;
   }
+  
 }
