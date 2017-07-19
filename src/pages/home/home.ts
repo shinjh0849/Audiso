@@ -22,8 +22,8 @@ export class HomePage {
   @ViewChild(Slides) slides: Slides;
 
   slideChanged(){
-    let currentIndex = this.slides.getActiveIndex();
-    console.log('Current index is', currentIndex);
+    //let currentIndex = this.slides.getActiveIndex();
+    //console.log('Current index is', currentIndex);
     this.navCtrl.push( T9Page, {}, {animate: false} );
   }
 }
