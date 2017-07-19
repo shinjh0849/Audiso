@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { T12Page } from '../t12/t12';
+import { T8Page } from '../t8/t8';
 
 @Component({
   selector: 'page-t7',
@@ -17,7 +17,7 @@ export class T7Page {
   }
 
   onLongPress(e){
-    console.log('longPress success and navigates to page-t12');
-    this.navCtrl.push( T12Page, {}, {animate: false} );
+    console.log('longPress success and navigates to page-t8');
+    this.navCtrl.push( T8Page, {}, {animate: false} );
   }
 }
