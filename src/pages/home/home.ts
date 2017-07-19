@@ -4,6 +4,8 @@ import { NavController, NavParams, Slides, IonicApp } from 'ionic-angular';
 import { T6Page } from '../t6/t6';
 import { T7Page } from '../t7/t7';
 import { T9Page } from '../t9/t9';
+import { T11Page } from '../t11/t11';
+
 
 @Component({
   selector: 'page-home',
