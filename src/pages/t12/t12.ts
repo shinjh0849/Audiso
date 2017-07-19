@@ -34,6 +34,7 @@ export class T12Page {
 
   //왼쪽 스와이프를 하면 뒤로 돌아간다
   onOverDrag(){
+    console.log("TQTQT");
     this.navCtrl.pop;
   }
   

@@ -1,7 +1,13 @@
 page-t12{
     
+    *{
+         .scroll-content{
+            overflow: hidden !important;
+         }
+       
+    }
     .bg{
-        position:   absolute;
+        position:   fixed;
         padding:    0;
         border:     0;
         width:      360px;
@@ -60,7 +66,7 @@ page-t12{
     }
 
     .roundC{
-        position: fixed;
+        position: absolute;
         border: 0;
         padding: 0;
         left: 201.39475px;
