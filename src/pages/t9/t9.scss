@@ -1,7 +1,17 @@
 page-t9 {
+      *{
+         .scroll-content{
+            overflow: hidden !important;
+         }
+       
+    }
 
 .interationCircle{
-    
+    position: absolute;
+    left: 201.39475px;
+    top : 505.58125px;
+    padding: 0;
+    border: 0;
     width: 82.52375px;
     height: 82.16875px;
  }
@@ -17,11 +27,13 @@ page-t9 {
     }
 
  .bg{
-    position: absolute;
+    position: fixed;
     padding: 0;
     border: 0;
     width: 360px;
     height:740px;
+    left: 0px;
+    top: 0px;
 }
 
 .wc{

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { T8Page } from "../t8/t8";
+import { T6Page } from "../t6/t6";
 
 /**
  * Generated class for the T5Page page.
@@ -23,7 +23,6 @@ export class T5Page {
   }
   
   onNext(){
-    this.navCtrl.push(T8Page); //T6Page import 해야함.
+    this.navCtrl.push(T6Page); 
   }
-
 }
