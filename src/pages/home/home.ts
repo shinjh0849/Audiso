@@ -1,5 +1,5 @@
 
-import { T11Page } from './../t11/t11';
+import { T4Page } from './../t4/t4';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { App } from 'ionic-angular';
@@ -16,7 +16,7 @@ export class HomePage {
 
 
   onClick(){
-    this.navCtrl.push(T11Page);
+    this.navCtrl.push(T4Page);
 
   }
 
