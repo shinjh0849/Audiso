@@ -3,7 +3,7 @@ import { NavController, NavParams, Slides, IonicApp } from 'ionic-angular';
 
 import { T6Page } from '../t6/t6';
 import { T7Page } from '../t7/t7';
-import { T4Page } from '../t4/t4';
+import { T11Page } from '../t11/t11';
 
 
 @Component({
@@ -25,6 +25,6 @@ export class HomePage {
   slideChanged(){
     let currentIndex = this.slides.getActiveIndex();
     console.log('Current index is', currentIndex);
-    this.navCtrl.push( T4Page, {}, {animate: false} );
+    this.navCtrl.push( T11Page, {}, {animate: false} );
   }
 }
