@@ -1,31 +1,23 @@
-import { OnInit, Component, ViewChild, Directive } from '@angular/core';
-import { NavController, NavParams, Slides, IonicApp } from 'ionic-angular';
 
-import { T6Page } from '../t6/t6';
-import { T7Page } from '../t7/t7';
-import { T9Page } from '../t9/t9';
-import { T11Page } from '../t11/t11';
-
+import { T2Page } from './../t2/t2';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
-  providers: [T7Page],
-  
+  templateUrl: 'home.html'
 })
-
-
 export class HomePage {
 
-
-  constructor(public navCtrl: NavController,) {
+  constructor(public navCtrl: NavController, private app: App) {
+    
   }
 
-  @ViewChild(Slides) slides: Slides;
 
-  slideChanged(){
-    //let currentIndex = this.slides.getActiveIndex();
-    //console.log('Current index is', currentIndex);
-    this.navCtrl.push( T9Page, {}, {animate: false} );
+  onClick(){
+    this.navCtrl.push(T2Page);
+
   }
+
 }
