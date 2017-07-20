@@ -1,3 +1,5 @@
+import { T2Page } from './../t2/t2';
+import { T10Page } from './../t10/t10';
 
 import { T4Page } from './../t4/t4';
 import { Component } from '@angular/core';
@@ -17,6 +19,7 @@ export class HomePage {
 
   onClick(){
     this.navCtrl.push(T4Page);
+    this.navCtrl.push(T2Page);
 
   }
 
