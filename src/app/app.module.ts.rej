@@ -1,0 +1,9 @@
+diff a/src/app/app.module.ts b/src/app/app.module.ts	(rejected hunks)
+@@ -25,7 +25,6 @@
+ import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-double-tap';
+ import { ShortPressDirective } from '../directives/short-press/short-press';
+ import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
+-import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
+ 
+ 
+ 

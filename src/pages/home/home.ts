@@ -1,3 +1,4 @@
+import { T5Page } from './../t5/t5';
 import { T2Page } from './../t2/t2';
 
 
@@ -18,7 +19,9 @@ export class HomePage {
 
 
   onClick(){
-    this.navCtrl.push( T2Page );
+
+   
+    this.navCtrl.push(T2Page);
 
   }
 
