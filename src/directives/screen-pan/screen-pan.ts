@@ -51,19 +51,14 @@ export class ScreenPanDirective {
      //console.log(newLeft);
      
      
-     if(this.element.nativeElement.offsetLeft <= -135 && !this.triggered){
+     if(newLeft <= -135 && !this.triggered){
         this.triggered = true;
         this.domCtrl.write( () => {
-            this.renderer.setElementStyle(this.element.nativeElement, 'left', 0 + 'px');
+            this.renderer.setElementStyle(this.element.nativeElement, 'left', -135 + 'px');
         })
        this.overDrag.emit(true); 
-
-     }else if(this.element.nativeElement.offsetLeft <= -135){
-        this.domCtrl.write( () => {
-            this.renderer.setElementStyle(this.element.nativeElement, 'left', 0 + 'px');
-        })
-        
-     }else{
+       
+     }else if(newLeft >= -135) {
           this.domCtrl.write( () => {
           this.renderer.setElementStyle(this.element.nativeElement, 'left', newLeft +'px');
         })
