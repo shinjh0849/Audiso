@@ -3,9 +3,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import {Input, ElementRef, Renderer, Output, EventEmitter } from '@angular/core';
+import { Input, ElementRef, Renderer, Output, EventEmitter } from '@angular/core';
 import { DomController } from 'ionic-angular';
 
+import { T11Page } from '../t11/t11';
 
 /**
  * Generated class for the T10Page page.
@@ -39,6 +40,6 @@ export class T10Page {
 
   onShortPress(e) {
     console.log("shortPress from ShortPressDirective")
-    //this.navCtrl.push(T2Page, {}, { animate: false });
+    this.navCtrl.push(T11Page, {}, { animate: false });
   }
 }

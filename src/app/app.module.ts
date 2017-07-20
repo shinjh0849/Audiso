@@ -26,7 +26,7 @@ import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-doubl
 import { ShortPressDirective } from '../directives/short-press/short-press';
 import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
 import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
-
+import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
 
 
 @NgModule({
@@ -50,7 +50,8 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
     ShortPressDirective,
     T5UpDownPanDirective,
     T9LeftPanDirective,
-    ScreenPanDirective
+    ScreenPanDirective,
+    T4ToRightDirective
   ],
   imports: [
     BrowserModule,
