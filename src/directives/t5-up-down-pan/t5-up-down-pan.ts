@@ -27,20 +27,18 @@ export class T5UpDownPanDirective {
   handlePan(ev) {
     let newTop = ev.deltaY;
 
-   if (this.element.nativeElement.offsetTop >= 110 && !this.triggered) {
+   if (newTop >= 110 && !this.triggered) {
       this.triggered = true;
       this.domCtrl.write(() => {
-        this.renderer.setElementStyle(this.element.nativeElement, 'top', 0 + 'px');
+        this.renderer.setElementStyle(this.element.nativeElement, 'top', 110 + 'px');
       })
       this.overdrag.emit(true);
 
-    } else {
+    } else if(newTop <= 110) {
       this.domCtrl.write(() => {
         this.renderer.setElementStyle(this.element.nativeElement, 'top', newTop + 'px');
       })
     }
-
-
 
     if (ev.isFinal == true) {
       this.domCtrl.write(() => {

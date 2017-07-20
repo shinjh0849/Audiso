@@ -25,7 +25,7 @@ import { LongPressDirective } from '../directives/long-press/long-press';
 import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-double-tap';
 import { ShortPressDirective } from '../directives/short-press/short-press';
 import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
-import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
+
 
 
 
@@ -49,7 +49,6 @@ import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
     TapnDoubleTapDirective,
     ShortPressDirective,
     T5UpDownPanDirective,
-    T9LeftPanDirective,
     ScreenPanDirective
   ],
   imports: [
