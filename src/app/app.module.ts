@@ -29,6 +29,8 @@ import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pa
 
 
 
+
+
 @NgModule({
   declarations: [
     MyApp,
