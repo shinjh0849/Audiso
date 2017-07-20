@@ -25,14 +25,7 @@ import { LongPressDirective } from '../directives/long-press/long-press';
 import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-double-tap';
 import { ShortPressDirective } from '../directives/short-press/short-press';
 import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
-<<<<<<< HEAD
-import { T9LeftPanDirective } from '../directives/t9-left-pan/t9-left-pan';
 import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
-=======
-
-
->>>>>>> JihoMin
-
 
 
 
@@ -56,13 +49,10 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
     TapnDoubleTapDirective,
     ShortPressDirective,
     T5UpDownPanDirective,
-<<<<<<< HEAD
-    T9LeftPanDirective,
-    ScreenPanDirective,
-    T4ToRightDirective
-=======
+
+
+    T4ToRightDirective,
     ScreenPanDirective
->>>>>>> JihoMin
   ],
   imports: [
     BrowserModule,
