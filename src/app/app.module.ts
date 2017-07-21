@@ -27,11 +27,16 @@ import { ShortPressDirective } from '../directives/short-press/short-press';
 import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
 import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
 
+import { NativeAudio } from '@ionic-native/native-audio';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { QRcodePage } from '../pages/q-rcode/q-rcode';
+
 
 
 @NgModule({
   declarations: [
     MyApp,
+    QRcodePage,
     HomePage,
     T2Page,
     T3Page,
@@ -61,6 +66,7 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    QRcodePage,
     HomePage,
     T2Page,
     T3Page,
@@ -78,7 +84,9 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
     StatusBar,
     SplashScreen,
     TapnDoubleTapDirective,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    BarcodeScanner,
+    NativeAudio
   ]
 })
-export class AppModule {}
+export class AppModule { }
