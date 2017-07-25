@@ -30,11 +30,16 @@ import { TestPage } from "../pages/test/test";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationPage } from "../pages/animation/animation";
 
+import { NativeAudio } from '@ionic-native/native-audio';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { QRcodePage } from '../pages/q-rcode/q-rcode';
+
 
 
 @NgModule({
   declarations: [
     MyApp,
+    QRcodePage,
     HomePage,
     T2Page,
     T3Page,
@@ -66,6 +71,7 @@ import { AnimationPage } from "../pages/animation/animation";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    QRcodePage,
     HomePage,
     T2Page,
     T3Page,
@@ -85,7 +91,9 @@ import { AnimationPage } from "../pages/animation/animation";
     StatusBar,
     SplashScreen,
     TapnDoubleTapDirective,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    BarcodeScanner,
+    NativeAudio
   ]
 })
-export class AppModule {}
+export class AppModule { }
