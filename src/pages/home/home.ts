@@ -13,6 +13,7 @@ import { NativeAudio } from '@ionic-native/native-audio';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
    
   nativeAudio: NativeAudio;
