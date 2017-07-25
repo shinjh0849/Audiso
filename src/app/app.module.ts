@@ -26,6 +26,9 @@ import { TapnDoubleTapDirective } from '../directives/tapn-double-tap/tapn-doubl
 import { ShortPressDirective } from '../directives/short-press/short-press';
 import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pan';
 import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
+import { TestPage } from "../pages/test/test";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimationPage } from "../pages/animation/animation";
 
 
 
@@ -49,13 +52,15 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
     TapnDoubleTapDirective,
     ShortPressDirective,
     T5UpDownPanDirective,
-
+    TestPage, 
+    AnimationPage,
 
     T4ToRightDirective,
     ScreenPanDirective
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -73,6 +78,8 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
     T10Page,
     T11Page,
     T12Page,
+    TestPage,
+    AnimationPage
   ],
   providers: [
     StatusBar,
