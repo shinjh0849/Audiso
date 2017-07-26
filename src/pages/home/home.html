@@ -1,8 +1,11 @@
+<!--
+<ion-content>
+  <img id="backG" src="assets/bg/배경1.png">
+</ion-content>
+-->
 
-  <ion-content (click)="onClick()" >
-    <img id="backG" src = "assets/bg/배경1.png">
-  </ion-content>
-
-  <ion-content  (click)="onClick()" >
-    <img id="logo" src="assets/보라색로고.png">
-  </ion-content>
+<ion-content>
+  <button ion-button (click)="QRbutton()">QR Button</button>
+  <button ion-button (click)="PLAY()">PLAY</button>
+  <img id="logo" src="assets/보라색로고.png" (click)="bounce()">
+</ion-content>

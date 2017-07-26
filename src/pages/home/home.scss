@@ -13,7 +13,11 @@ page-home{
         margin-top: 80%;
         width: 140px;
         height: auto;
-        
+
+        // 이거 빠운스 옵션임
+        animation-name: bounce;
+        animation-duration: 7s;
+        animation-iteration-count: 100;
     }
     #backG{
         width:100%;
@@ -21,6 +25,31 @@ page-home{
         position: relative;
         animation-name: example;
         animation-duration: 10s;
+        
+    }
+
+
+    
+    //이거 빠운스 빠운스 두근되
+    @keyframes bounce {
+        from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0,0,0);
+        }
+
+        40%, 43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+        }
+
+        70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+        }
+
+        90% {
+        transform: translate3d(0,-4px,0);
+        }
     }
 
     @keyframes example {
