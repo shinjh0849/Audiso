@@ -33,6 +33,8 @@ import { AnimationPage } from "../pages/animation/animation";
 import { NativeAudio } from '@ionic-native/native-audio';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
+import { P1Page } from "../pages/p1/p1";
+import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
 
 
 
@@ -59,9 +61,11 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
     T5UpDownPanDirective,
     TestPage, 
     AnimationPage,
+    P1Page,
 
     T4ToRightDirective,
-    ScreenPanDirective
+    ScreenPanDirective,
+    P1UpslidingDirective
   ],
   imports: [
     BrowserModule,
@@ -85,7 +89,8 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
     T11Page,
     T12Page,
     TestPage,
-    AnimationPage
+    AnimationPage,
+    P1Page,
   ],
   providers: [
     StatusBar,
