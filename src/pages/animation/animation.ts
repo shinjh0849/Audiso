@@ -10,12 +10,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   `,
   animations: [
     trigger('flyInOut', [
-      transition('void => *', [
-        style({transform: 'translateX(-100%)'}),
+      transition(':enter', [
+        style({transform: 'translateX(-700%)'}),
         animate('1s')
       ]),
-      transition('* => void', [
-        animate('1s', style({transform: 'translateX(100%)'}))
+      transition(':leave', [
+        animate('1s', style({transform: 'translateX(600%)'}))
       ])
     ])
   ]

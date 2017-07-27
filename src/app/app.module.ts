@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
 
 import { T2Page } from './../pages/t2/t2';
@@ -36,8 +37,10 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
 
 
 
+
 @NgModule({
   declarations: [
+    SplashPage,
     MyApp,
     QRcodePage,
     HomePage,
@@ -72,6 +75,7 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
   entryComponents: [
     MyApp,
     QRcodePage,
+    SplashPage,
     HomePage,
     T2Page,
     T3Page,
