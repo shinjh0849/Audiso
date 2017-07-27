@@ -1,0 +1,30 @@
+page-splash {
+
+    .scroll-content {
+        overflow: hidden !important;
+    }
+
+        #logo{
+        position: absolute;
+        left: 110px;
+        top: 286.85px;
+        width: 140px;
+        height: 122.4px;
+        }
+
+        #backG{
+        width:100%;
+        height:auto;
+        position: relative;
+        animation-name: dropDown;
+        animation-duration: 3s;
+        }
+
+        
+
+    @keyframes dropDown {
+        from { left:0px; top:-3000px}
+        to {left:0px; top:0px}
+    }
+
+}

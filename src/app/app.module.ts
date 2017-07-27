@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
 
 import { T2Page } from './../pages/t2/t2';
@@ -38,8 +39,10 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
 
 
 
+
 @NgModule({
   declarations: [
+    SplashPage,
     MyApp,
     QRcodePage,
     HomePage,
@@ -76,6 +79,7 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
   entryComponents: [
     MyApp,
     QRcodePage,
+    SplashPage,
     HomePage,
     T2Page,
     T3Page,

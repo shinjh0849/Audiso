@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>Feedo</title>
+
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+  </head>
+
+  <body ng-app="Tapo" ng-controller="homeCtrl as vm">
+    <ion-content>
+      <button st-tap="vm.onTap(1)" 
+              st-double-tap="vm.onDoubleTap(1)" sep-tap>
+        Button
+      </button>
+
+      <div>
+        tapCount :- {{vm.tapCount}}
+      </div>
+      
+      <div>
+        doubleTapCount :- {{vm.doubleTapCount}}
+      </div>
+    </ion-content>
+  </body>
+</html>
