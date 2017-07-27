@@ -1,4 +1,5 @@
 <ion-content>
-    <img id="backG" src="assets/bg/배경1.png">
-    <img id="logo" src="assets/보라색로고.png">
+    <div class = "backG" [@upDown] = "dropState"><img src="assets/bg/배경1.png"></div>
+    <div class = "wLogo"><img src="assets/흰로고.png"></div>
+    <div class = "pLogo" [@fastDown] = "fastState"><img src="assets/보라색로고.png"></div>   
 </ion-content>

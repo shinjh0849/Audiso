@@ -20,7 +20,7 @@ import { SplashPage } from '../pages/splash/splash';
 
 })
 export class MyApp {
-  rootPage:any = P1Page;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {

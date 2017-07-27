@@ -4,7 +4,7 @@ page-splash {
         overflow: hidden !important;
     }
 
-        #logo{
+        .pLogo{
         position: absolute;
         left: 110px;
         top: 286.85px;
@@ -12,19 +12,21 @@ page-splash {
         height: 122.4px;
         }
 
-        #backG{
-        width:100%;
-        height:auto;
-        position: relative;
-        animation-name: dropDown;
-        animation-duration: 3s;
+        .wLogo{
+        position: absolute;
+        left: 110px;
+        top: 286.85px;
+        width: 140px;
+        height: 122.4px;
         }
 
-        
-
-    @keyframes dropDown {
-        from { left:0px; top:-3000px}
-        to {left:0px; top:0px}
-    }
-
+        .backG{
+        padding: 0;
+        border: 0;
+        left: 0px; 
+        top: 0px;
+        width: 360px;
+        height: 990.25px;
+        position: absolute;
+        }
 }

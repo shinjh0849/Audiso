@@ -2,27 +2,69 @@ import { Component, trigger, state, style, transition, animate, keyframes, group
 import { ViewController } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-
-
 @Component({
   selector: 'page-splash',
   templateUrl: 'splash.html',
   animations: [
-  trigger('upDown', [
-    state('up',   style({
-      left: '0px', top: '-3000px'
-    })),
-    state('down', style({
-      transform: 'translateY(0) scale(0)'
-    })),
-    transition('up => down', animate('100ms ease-out'))
-  ])
-]
+    trigger('upDown', [
+      state('up', style({
+        padding: '0',
+        border: '0',
+        left: '0px', 
+        top: '-990px',
+        width: '360px',
+        height: '990.25px',
+        })),
+      state('down', style({
+        padding: '0',
+        border: '0',
+        left: '0px', 
+        top: '0px',
+        width: '360px',
+        height: '990.25px',
+      })),
+      transition('up => down', [
+       animate('1s 0.5s ease-out')
+       ])
+    ]),
+    trigger('fastDown', [
+      state('up', style({
+        padding: '0',
+        border: '0',
+        left: '110px',
+        top: '286.85px',
+        width: '140px',
+        height: '122.4px'
+        })),
+      state('down', style({
+        padding: '0',
+        border: '0',
+        left: '110px',
+        top: '1000px',
+        width: '140px',
+        height: '122.4px'
+      })),
+      transition('up => down', [
+       animate('0.001s 0.7s')
+       ])
+    ])
+  ]
 })
+
+
 export class SplashPage {
+
+  dropState: string = "up";
+  fastState: string = "up";
  
   constructor(public viewCtrl: ViewController, public splashScreen: SplashScreen) {
  
+  }
+
+  ionViewDidLoad(){
+    console.log('splash active');
+    this.dropState = (this.dropState === "up") ? "down" : "up";
+    this.fastState = (this.fastState === "up") ? "down" : "up";
   }
  
   ionViewDidEnter() {
@@ -31,7 +73,7 @@ export class SplashPage {
  
     setTimeout(() => {
       this.viewCtrl.dismiss();
-    }, 4000);
+    }, 3000);
  
   }
  
