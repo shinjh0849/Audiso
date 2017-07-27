@@ -9,47 +9,119 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
     trigger('flyOut', [
       transition('void => *', [
         style({transform: 'translateX(-100%)'}),
-        animate('0.7s')
+        animate('0.4s')
       ])
-    ]),
-    trigger('flyUp', [
-      state('active',   style({transform: 'translateY(100%)'})),
-      state('inactive',   style({transform: 'translateY(-95%)'})),
+    ]), 
+    
+    trigger('flyCircleUp', [
+      state('none', style({
+          padding: '0',
+          border: '0',
+          left: '-190px',
+          top: '1000.5px',
+          width: '740px',
+          height: '740px'
+      })),
+      state('first', style({
+          padding: '0',
+          border: '0',
+          left: '-190px',
+          top: '559.5px',
+          width: '740px',
+          height: '740px'
+      })),
+      state('second', style({
+          padding: '0',
+          border: '0',
+          left: '-190px',
+          top: '-90.5px',
+          width: '740px',
+          height: '740px'
+      })),
       
-      transition('void => *', [
-        style({transform: 'translateY(100%)'}), 
-        animate('1.5s', )
+      transition('none => first', [
+        animate('0.8s 0.3s')
       ]),
-      transition('* => void', [
-        animate('1.5s' ,style({transform: 'translateY(-100%)'})), // 이건 이렇게 해야 하네.;.
-        // state로 하는 거 내일 더 공부하기 잘 안되니까 ㅜ
+    
+      transition('first => second', [
+        animate('0.5s')
+    
       ])
 
     ])
-   
+   ,
+
+    trigger('flyQloUp', [
+      state('none', style({
+          padding: '0',
+          border: '0',
+          left: '145.4688px',
+          top: '1000px',
+          width: '62.2813px',
+          height: '27.5px'
+      })),
+      state('first', style({
+          padding: '0',
+          border: '0',
+          left: '145.4688px',
+          top: '617.4645px',
+          width: '62.2813px',
+          height: '27.5px'
+      })),
+      state('second', style({
+          padding: '0',
+          border: '0',
+          left: '145.4688px',
+          top: '-140px',
+          width: '62.2813px',
+          height: '27.5px'
+      })),
+      
+      transition('none => first', [
+        animate('0.8s 0.3s')
+      ]),
+    
+      transition('first => second', [
+        animate('0.1s')
+    
+      ])
+
+    ])
 
   ]
- 
+ /*
+ .qlo{
+        position: absolute;
+        padding: 0;
+        border: 0;
+        left: 145.4688px;
+        top: 617.4645px;
+        width: 62.2813px;
+        height: 27.5px;
+    }
+      */
 
   
 })
 
 
-
 export class P1Page {
 
   showText: boolean = true;
-  showUp: boolean = true;
-  state: string = 'active';
+  showCircleUp: string = "none";
+  showQloUp: string = "none";
+  
+  ionViewDidLoad() {
+    this.showCircleUp = (this.showCircleUp === "none" ? "first" : "none");
+    this.showQloUp = (this.showQloUp === "none" ? "first" : "none");
+  }
   
 
   upCircle(){
-    // console.log(this.state);
-    //this.state = (this.state === 'active' ? 'inactive' : 'active');
-    //console.log(this.state);
-    this.showUp = this.showUp ? false : true
-    console.log("upCircle이 작동됨.");
+    this.showCircleUp = (this.showCircleUp === "first" ? "second" : "first");
+    this.showQloUp = (this.showQloUp === "first" ? "second" : "first");
   }
   
 }
+
 
