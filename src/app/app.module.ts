@@ -1,3 +1,5 @@
+import { DifficaltyHellPage } from './../pages/difficalty-hell/difficalty-hell';
+import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -5,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
 
 import { T2Page } from './../pages/t2/t2';
@@ -38,8 +41,10 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
 
 
 
+
 @NgModule({
   declarations: [
+    SplashPage,
     MyApp,
     QRcodePage,
     HomePage,
@@ -61,11 +66,19 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T5UpDownPanDirective,
     TestPage, 
     AnimationPage,
+<<<<<<< HEAD
     P1Page,
 
     T4ToRightDirective,
     ScreenPanDirective,
     P1UpslidingDirective
+=======
+    DifficaltyHellPage,
+
+    T4ToRightDirective,
+    ScreenPanDirective,
+    AniiPage
+>>>>>>> JihoMin
   ],
   imports: [
     BrowserModule,
@@ -76,6 +89,7 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
   entryComponents: [
     MyApp,
     QRcodePage,
+    SplashPage,
     HomePage,
     T2Page,
     T3Page,
@@ -90,7 +104,12 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T12Page,
     TestPage,
     AnimationPage,
+<<<<<<< HEAD
     P1Page,
+=======
+    AniiPage,
+    DifficaltyHellPage
+>>>>>>> JihoMin
   ],
   providers: [
     StatusBar,
