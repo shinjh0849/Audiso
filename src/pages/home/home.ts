@@ -1,9 +1,11 @@
+import { AniiPage } from './../anii/anii';
 import { Component } from '@angular/core';
 import { App, NavController, NavParams, Platform } from 'ionic-angular';
 
 import { T2Page } from './../t2/t2';
 import { T4Page } from './../t4/t4';
 import { T5Page } from './../t5/t5';
+
 
 import { QRcodePage } from '../q-rcode/q-rcode';
 import { NativeAudio } from '@ionic-native/native-audio';
@@ -28,7 +30,7 @@ export class HomePage {
   
 
   onClick(){
-    //this.navCtrl.push(T2Page);
+    this.navCtrl.push(T2Page);
   }
 
     // onSuccess Callback
@@ -64,6 +66,11 @@ export class HomePage {
 
   bounce(){
     
+  }
+
+  //애니메이션 페이지 시험용
+  onPress(){
+    this.navCtrl.push(AniiPage);
   }
   
       
