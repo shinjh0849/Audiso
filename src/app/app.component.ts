@@ -12,6 +12,7 @@ import { P1Page } from "../pages/p1/p1";
 
 
 import { SplashPage } from '../pages/splash/splash';
+import { RecommendPage } from '../pages/recommend/recommend';
 
 
 
@@ -20,7 +21,7 @@ import { SplashPage } from '../pages/splash/splash';
 
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = RecommendPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {

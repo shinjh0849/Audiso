@@ -1,4 +1,4 @@
-import { DifficaltyHellPage } from './../pages/difficalty-hell/difficalty-hell';
+
 import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -9,6 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
+
+import { RecommendPage } from '../pages/recommend/recommend';
 
 import { T2Page } from './../pages/t2/t2';
 import { T3Page } from './../pages/t3/t3';
@@ -66,19 +68,16 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T5UpDownPanDirective,
     TestPage, 
     AnimationPage,
-<<<<<<< HEAD
     P1Page,
 
     T4ToRightDirective,
     ScreenPanDirective,
-    P1UpslidingDirective
-=======
-    DifficaltyHellPage,
-
-    T4ToRightDirective,
-    ScreenPanDirective,
-    AniiPage
->>>>>>> JihoMin
+    P1UpslidingDirective,
+    
+    RecommendPage
+    
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -104,12 +103,10 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T12Page,
     TestPage,
     AnimationPage,
-<<<<<<< HEAD
-    P1Page,
-=======
-    AniiPage,
-    DifficaltyHellPage
->>>>>>> JihoMin
+    RecommendPage
+
+    
+
   ],
   providers: [
     StatusBar,

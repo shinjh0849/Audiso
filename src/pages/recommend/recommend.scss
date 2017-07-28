@@ -1,0 +1,112 @@
+page-recommend {
+    *{
+        
+        .scroll-content{
+        overflow: hidden !important;
+        }
+    }
+
+    .bgCircle{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       -190px;
+        top:        325.5px;    
+        width:      672.5px;
+        height:     672.5px;
+        
+    }
+
+    .recommend{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       32px;
+        top:        124px; 
+        width:      107px;
+        height:     17px;
+    }
+
+    .category{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       32px;
+        top:        157px; 
+        width:      197px;
+        height:     35px;
+        
+    }
+
+    .outer{
+        position:   absolute;
+        margin-bottom: 600px;
+        padding:    0;
+        border:     0;
+        //left:       79px;
+        //top:        225px;
+        width:      201px;
+        height:     201px;
+        
+    }
+
+
+    .top{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        //left:       -100px;
+        //top:        271px;
+        width:      201px;
+        height:     201px;
+        
+    }
+
+
+    .bottom{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        //left:       258px;
+        //top:        271px;
+        width:      201px;
+        height:     201px;
+        
+    }
+
+    .interactionOuter{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       109px;
+        top:        497px;
+        width:      146px;
+        height:     146px;
+    }
+
+    .interactionInner{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       136px;
+        top:        524px;
+        width:      92px;
+        height:     92px;
+    }
+
+    .hi{
+        position: absolute;
+        left:       -21.875px;
+        top:        493.625px;    
+        
+        animation: myOrbit 4s linear infinite;
+
+        background-color: red;
+    }
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateY(-300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-300px) rotate(-360deg); }
+}
+
+}
