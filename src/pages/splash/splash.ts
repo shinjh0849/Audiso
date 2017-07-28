@@ -24,7 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         height: '990.25px',
       })),
       transition('up => down', [
-       animate('1s 0.5s ease-out')
+       animate('0.75s 0.5s ease-in')
        ])
     ]),
     trigger('fastDown', [
@@ -45,7 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         height: '122.4px'
       })),
       transition('up => down', [
-       animate('0.001s 0.7s')
+       animate('0.001s 0.9s')
        ])
     ])
   ]
@@ -58,7 +58,6 @@ export class SplashPage {
   fastState: string = "up";
  
   constructor(public viewCtrl: ViewController, public splashScreen: SplashScreen) {
- 
   }
 
   ionViewDidLoad(){
