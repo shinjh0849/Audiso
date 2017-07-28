@@ -1,3 +1,5 @@
+import { DifficaltyHellPage } from './../pages/difficalty-hell/difficalty-hell';
+import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -64,11 +66,19 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T5UpDownPanDirective,
     TestPage, 
     AnimationPage,
+<<<<<<< HEAD
     P1Page,
 
     T4ToRightDirective,
     ScreenPanDirective,
     P1UpslidingDirective
+=======
+    DifficaltyHellPage,
+
+    T4ToRightDirective,
+    ScreenPanDirective,
+    AniiPage
+>>>>>>> JihoMin
   ],
   imports: [
     BrowserModule,
@@ -94,7 +104,12 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T12Page,
     TestPage,
     AnimationPage,
+<<<<<<< HEAD
     P1Page,
+=======
+    AniiPage,
+    DifficaltyHellPage
+>>>>>>> JihoMin
   ],
   providers: [
     StatusBar,

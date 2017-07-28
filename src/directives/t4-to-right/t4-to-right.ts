@@ -17,8 +17,10 @@ export class T4ToRightDirective {
   @Input('startTop') startTop: any;
 
   @Output() overDrag: any = new EventEmitter();
+  @Output() aaa: number = 0;
+  @Output() dighdigh: any = new EventEmitter();
   triggered: boolean = false;
-
+  
   constructor(public element: ElementRef, public renderer: Renderer, public domCtrl: DomController ) {
     
   }
@@ -35,13 +37,16 @@ export class T4ToRightDirective {
 
 
   handlePan(ev){
-      
+      this.aaa = ev.deltaX;
       let newLeft = ev.deltaX;
       let newTop = ev.center.y;
       let margin = ev.center.x - this.element.nativeElement.offsetLeft;
       let final = newLeft - this.element.nativeElement.offsetLeft;
 
-     
+      this.dighdigh.emit(true);
+
+      console.log(this.dighdigh);
+
      if(newLeft > 135 && !this.triggered){
         this.triggered = true;
         this.domCtrl.write( () => {
