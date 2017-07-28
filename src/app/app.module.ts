@@ -1,3 +1,5 @@
+import { DifficaltyHellPage } from './../pages/difficalty-hell/difficalty-hell';
+import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -59,9 +61,11 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
     T5UpDownPanDirective,
     TestPage, 
     AnimationPage,
+    DifficaltyHellPage,
 
     T4ToRightDirective,
-    ScreenPanDirective
+    ScreenPanDirective,
+    AniiPage
   ],
   imports: [
     BrowserModule,
@@ -85,7 +89,9 @@ import { QRcodePage } from '../pages/q-rcode/q-rcode';
     T11Page,
     T12Page,
     TestPage,
-    AnimationPage
+    AnimationPage,
+    AniiPage,
+    DifficaltyHellPage
   ],
   providers: [
     StatusBar,

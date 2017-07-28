@@ -29,6 +29,9 @@ export class T3Page {
     this.navCtrl.push(T4Page, {}, { animate: false }); // 다시 들으시려면 탭 두번을 (지금은 처음페이지로 이동)
   }
 
+  ehfdkrk() {
+    this.navCtrl.pop();
+  }
   
 
 }

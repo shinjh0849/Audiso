@@ -1,4 +1,4 @@
-<ion-content t4-to-right (overDrag)="onToRight()">
+<ion-content (pan)="digh($event)" (shortPress)= "ehfdkrk()" >
   <div class = "bg"><img src = "assets/background.png"></div>
   <div class = "wc"><img src = "assets/bigWhiteCircle.png"></div>
   <div class = "tutorial"><img src = "assets/T4/TUTORIAL.png"></div>
@@ -6,7 +6,8 @@
   <div class = "text"><img src = "assets/T4/text.png"></div>
   <div class = "page"><img src = "assets/T4/Navigator_2_4.png"></div>
     <div class = "dotC" ><img src = "assets/T4/whiteButton.png"></div>
-  <div class = "fingerC" ><img src = "assets/T4/fingerButton.png" ></div>
+  <div class = "fingerC" [style.left]="abc + 'px'" ><img src = "assets/T4/fingerButton.png"  ></div>
+  <button ion-button>{{abc}}</button>
 
 </ion-content>
 
