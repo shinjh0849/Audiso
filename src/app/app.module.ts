@@ -106,14 +106,10 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     TestPage,
     AnimationPage,
     RecommendPage,
-<<<<<<< HEAD
-    P1Page    
-=======
     P1Page,
     TutorialPage
 
     
->>>>>>> EunJi
 
   ],
   providers: [
