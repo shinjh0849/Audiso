@@ -1,12 +1,16 @@
-<ion-content>
+<ion-content t4-to-right (pan) = "moveButton($event)" (doubleTap) = "nextP()">
   <div class = "bgCircle"><img src = "assets/21-24/보라 원.png"></div>
   <div class = "recommend"><img src = "assets/21-24/Recommend.png"></div>
   <div class = "category"><img src = "assets/21-24/text1_21_24.png"></div>
-  <div class = "hi">
-    <div class = "bottom"><img src = "assets/21-24/bottom_button_blue.png"></div>
-    <div class = "outer"><img src = "assets/21-24/outer_button.png"></div>
-    <div class = "top"><img src = "assets/21-24/top_button_pink.png"></div>
+ 
+  
+  <div class = "outer" [@digh] = "roomState"><img src = "assets/21-24/outer_button.png"></div>
+  <div class = "top" [@lightsOnOff] = "roomState"><img src = "assets/21-24/top_button_pink.png"></div>
+  <div class = "top" [@apfhd] = "roomState"><img src = "assets/21-24/bottom_button_blue.png"></div>
+
+  <div>
+    <div class = "interactionOuter" [style.left] = "panXo + 'px'"><img src = "assets/21-24/인터렉션 원-01.png"></div>
+    <div class = "interactionInner" [style.left] = "panXi + 'px'"><img src = "assets/21-24/인터렉션 원-02.png"></div>
   </div>
-  <div class = "interactionOuter"><img src = "assets/21-24/인터렉션 원-01.png"></div>
-  <div class = "interactionInner"><img src = "assets/21-24/인터렉션 원-02.png"></div>
+
 </ion-content>

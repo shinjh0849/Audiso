@@ -10,7 +10,7 @@ page-recommend {
         position:   absolute;
         padding:    0;
         border:     0;
-        left:       -190px;
+        left:       -180px;
         top:        325.5px;    
         width:      672.5px;
         height:     672.5px;
@@ -43,8 +43,8 @@ page-recommend {
         margin-bottom: 600px;
         padding:    0;
         border:     0;
-        //left:       79px;
-        //top:        225px;
+        left:       79px;
+        top:        561px;
         width:      201px;
         height:     201px;
         
@@ -55,10 +55,9 @@ page-recommend {
         position:   absolute;
         padding:    0;
         border:     0;
-        //left:       -100px;
-        //top:        271px;
+        left:       79px;
+        top:        561px;
         width:      201px;
-        height:     201px;
         
     }
 
@@ -67,8 +66,8 @@ page-recommend {
         position:   absolute;
         padding:    0;
         border:     0;
-        //left:       258px;
-        //top:        271px;
+        left:       258px;
+        top:        631px;
         width:      201px;
         height:     201px;
         
@@ -94,19 +93,11 @@ page-recommend {
         height:     92px;
     }
 
-    .hi{
-        position: absolute;
-        left:       -21.875px;
-        top:        493.625px;    
-        
-        animation: myOrbit 4s linear infinite;
-
-        background-color: red;
-    }
-
+    
+/*
 @keyframes myOrbit {
     from { transform: rotate(0deg) translateY(-300px) rotate(0deg); }
     to   { transform: rotate(360deg) translateY(-300px) rotate(-360deg); }
-}
+}*/
 
 }

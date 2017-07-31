@@ -18,6 +18,7 @@ import { Slides } from 'ionic-angular';
   selector: 'page-t2',
   templateUrl: 't2.html',
   animations : [
+<<<<<<< HEAD
     trigger('bounceIn', [
       state('bounceIn', style({
         
@@ -36,6 +37,18 @@ import { Slides } from 'ionic-angular';
           style({opacity:0, transform: 'translateX(100%)', offset: 1.0})
         ]))
       ])
+=======
+    trigger('lightsOnOff', [
+      state('off', style({
+         transform:  'rotate(0deg) translateY(150px) rotate(0deg)' 
+      })),
+      state('on', style({
+        transform: 'rotate(360deg) translateY(150px) rotate(-360deg)'
+      })),
+      transition('off <=>on', [animate('3s'
+      )])
+      
+>>>>>>> a90c6715938ffd83a98013e70c20cc3c10d734c1
     ])
   ]
 })
