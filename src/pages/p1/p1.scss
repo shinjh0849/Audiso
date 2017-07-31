@@ -65,7 +65,7 @@ page-p1 {
         height: 27.5px;
     }
 
-    .recommend{
+    .recommendW{
         position: absolute;
          padding: 0;
           border: 0;
@@ -100,5 +100,26 @@ page-p1 {
           top: 497.5px;
           width: 145.7205px;
           height: 145.7205px;
+    }
+        
+        .recommendB{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       32px;
+        top:        124px; 
+        width:      107px;
+        height:     17px;
+    }
+
+    .category{
+        position:   absolute;
+        padding:    0;
+        border:     0;
+        left:       32px;
+        top:        157px; 
+        width:      197px;
+        height:     35px;
+        
     }
 }
