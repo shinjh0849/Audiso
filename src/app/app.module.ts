@@ -40,6 +40,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
 import { P1Page } from "../pages/p1/p1";
 import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
+import { TutorialPage } from "../pages/tutorial/tutorial";
 
 
 
@@ -74,7 +75,8 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     ScreenPanDirective,
     P1UpslidingDirective,
     
-    RecommendPage
+    RecommendPage,
+    TutorialPage
     
     
     
@@ -103,7 +105,9 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T12Page,
     TestPage,
     AnimationPage,
-    RecommendPage
+    RecommendPage,
+    P1Page,
+    TutorialPage
 
     
 

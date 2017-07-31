@@ -13,7 +13,7 @@ import { P1Page } from "../pages/p1/p1";
 
 import { SplashPage } from '../pages/splash/splash';
 import { RecommendPage } from '../pages/recommend/recommend';
-
+import { TutorialPage } from "../pages/tutorial/tutorial";
 
 
 @Component({
@@ -21,7 +21,7 @@ import { RecommendPage } from '../pages/recommend/recommend';
 
 })
 export class MyApp {
-  rootPage:any = RecommendPage;
+  rootPage:any = P1Page;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
