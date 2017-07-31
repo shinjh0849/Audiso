@@ -47,7 +47,7 @@ export class T4ToRightDirective {
 
       console.log(this.dighdigh);
 
-     if(newLeft > 135 && !this.triggered){
+    /* if(newLeft > 135 && !this.triggered){
         this.triggered = true;
         this.domCtrl.write( () => {
             this.renderer.setElementStyle(this.element.nativeElement, 'left', 135 + 'px');
@@ -65,6 +65,7 @@ export class T4ToRightDirective {
           this.renderer.setElementStyle(this.element.nativeElement, 'left', 0 + 'px');
        })
        this.triggered = false;
-     }
+     }*/
    }
+   
 }

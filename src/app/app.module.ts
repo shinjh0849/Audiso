@@ -103,9 +103,8 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     T12Page,
     TestPage,
     AnimationPage,
-    RecommendPage
-
-    
+    RecommendPage,
+    P1Page    
 
   ],
   providers: [
