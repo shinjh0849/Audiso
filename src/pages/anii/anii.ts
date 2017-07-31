@@ -28,7 +28,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
       })),
       state('on', style({
         backgroundColor: 'white'
-      })),
+      })), 
       transition('off <=>on', [animate('2s', style({transform: 'rotate(90deg)'}))]),
     ])
   ]
