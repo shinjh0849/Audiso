@@ -6,20 +6,116 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-p1',
   templateUrl: 'p1.html',
   animations: [
-    trigger('flyOut', [
+    trigger('flyUQ', [
+     state('disA', style({
+         opacity: 0
+      })),
+       state('first', style({
+          padding: '0',
+          border: '0',
+          left: '-100px',
+          top: '124.375px',
+          width: '76.3365px',
+          height: '16.75px'
+      })),
+      state('second', style({
+         padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '124.375px',
+          width: '76.3365px',
+          height: '16.75px'
+      })),
+      transition('first => second', [
+        animate('1s')
+      ]),
+      transition('second => disA', [
+        animate('0.01s')
+      ])
+    ]), 
+      trigger('flyT1', [
        state('disA', style({
          opacity: 0
       })),
-      transition('void => *', [
-        style({transform: 'translateX(-100%)'}),
-        animate('0.4s')
+       state('first', style({
+          padding: '0',
+          border: '0',
+          left: '-100px',
+          top: '186.5625px',
+          width: '251.136px',
+          height: '154px'
+      })),
+      state('second', style({
+         padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '186.5625px',
+          width: '251.136px',
+          height: '154px'
+      })),
+      transition('first => second', [
+        animate('1s')
       ]),
-      transition('* => disA', [
+      transition('second => disA', [
         animate('0.01s')
       ])
-      
-
     ]), 
+      trigger('flyT2', [
+       state('disA', style({
+         opacity: 0
+      })),
+       state('first', style({
+          padding: '0',
+          border: '0',
+          left: '-100px',
+          top: '373.125px',
+          width: '291.849px',
+          height: '63.75px'
+      })),
+      state('second', style({
+         padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '373.125px',
+          width: '291.849px',
+          height: '63.75px'
+      })),
+      transition('first => second', [
+        animate('1s')
+      ]),
+      transition('second => disA', [
+        animate('0.01s')
+      ])
+    ]),         
+      trigger('flyUni', [
+       state('disA', style({
+         opacity: 0
+      })),
+       state('first', style({
+          padding: '0',
+          border: '0',
+          left: '-100px',
+          top: '491.25px',
+          width: '54.3283px',
+          height: '26.25px'
+      })),
+      state('second', style({
+         padding: '0',
+          border: '0',
+          left: '149.672px',
+          top: '491.25px',
+          width: '54.3283px',
+          height: '26.25px'
+      })),
+      transition('first => second', [
+        animate('1s')
+      ]),
+      transition('second => disA', [
+        animate('0.01s')
+      ])
+    ]), 
+    
+    
     ////
     trigger('flyCircleUp', [
       state('none', style({
@@ -55,7 +151,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           height: '740px'
       })),
       transition('none => first', [
-        animate('0.8s 0.3s')
+        animate('1s 0.7s')
       ]),
       transition('first => second', [
         animate('0.2s')
@@ -94,7 +190,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           height: '27.5px'
       })),
             transition('none => first', [
-        animate('0.8s 0.3s')
+        animate('1s 0.7s')
       ]),
       transition('first => second', [
         animate('0.1s')
@@ -286,19 +382,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         
       transition('first => second', [
         animate('0.2s 0.3s')
-      ]),
-      
+      ]),   
     ])
-
-
   ]
-  
 })
 
 
 export class P1Page {
 
-  showText: string = "void"; // 이렇게 해도 되는건가?
+  showUQ: string = "first";
+  showT1: string = "first";
+  showT2: string = "first";
+  showUni: string = "first"; 
+
   showCircleUp: string = "none";
   showQloUp: string = "none";
   showRecoUp: string = "first";
@@ -309,6 +405,10 @@ export class P1Page {
   showCate: string = "first";
   
   ionViewDidLoad() {
+    this.showUQ = (this.showUQ === "first" ? "second" : "first");
+    this.showT1 = (this.showT1 === "first" ? "second" : "first");
+    this.showT2 = (this.showT2 === "first" ? "second" : "first");
+    this.showUni = (this.showUni === "first" ? "second" : "first");
     this.showCircleUp = (this.showCircleUp === "none" ? "first" : "none");
     this.showQloUp = (this.showQloUp === "none" ? "first" : "none");
   }
@@ -326,15 +426,21 @@ export class P1Page {
     this.showBUp = (this.showBUp === "second" ? "rotate" : "second");
   }
   onNext(){
+  
     this.showCircleUp = (this.showCircleUp === "second" ? "third" : "second");
-    this.showText = "disA";
+  
+    this.showUQ = (this.showUQ === "second" ? "disA" : "second");
+    this.showT1 = (this.showT1 === "second" ? "disA" : "second");
+    this.showT2 = (this.showT2 === "second" ? "disA" : "second");
+    this.showUni = (this.showUni === "second" ? "disA" : "second");
+  
     this.showRecoUp = (this.showRecoUp === "second" ? "third" : "second")
     this.showT3Up = (this.showT3Up === "second" ? "third" : "second");
     this.showT4Up = (this.showT4Up === "second" ? "third" : "second");
     this.showBUp = (this.showBUp === "rotate" ? "third" : "rotate");
     this.showNewReco = (this.showNewReco === "first" ? "second" : "first");
     this.showCate = (this.showCate === "first" ? "second" : "first");
-  
+   
   }
   
 }

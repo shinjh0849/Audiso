@@ -72,7 +72,7 @@ export class SplashPage {
  
     setTimeout(() => {
       this.viewCtrl.dismiss();
-    }, 0); // 3000 은지가 잠시 고침.
+    }, 3000); // 3000 은지가 잠시 고침.
  
   }
  
