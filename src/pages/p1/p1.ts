@@ -7,10 +7,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'p1.html',
   animations: [
     trigger('flyOut', [
+       state('disA', style({
+         opacity: 0
+      })),
       transition('void => *', [
         style({transform: 'translateX(-100%)'}),
         animate('0.4s')
+      ]),
+      transition('* => disA', [
+        animate('0.01s')
       ])
+      
+
     ]), 
     ////
     trigger('flyCircleUp', [
@@ -53,8 +61,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         animate('0.2s')
       ]),
       transition('second => third', [
-        animate('2s',  keyframes([
-        style({ top: '-50px', offset: 0.2}),
+        animate('1.5s',  keyframes([
+        style({ top: '-100px', offset: 0.5}),
         style({ top: '369.5px', offset: 1.0})
       ]))
       ])
@@ -111,8 +119,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '107.4758px',
           height: '16.75px'
       })),
+        state('third', style({
+          padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '-1000px',
+          width: '107.4758px',
+          height: '16.75px'
+      })),
       transition('first => second', [
         animate('0.2s')
+      ]),
+       transition('second => third', [
+        animate('0.02s')
       ])
     ]),
       trigger('flyT3Up', [
@@ -132,8 +151,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '302.4643px',
           height: '154px'
       })),
+      state('third', style({
+           padding: '0',
+           border: '0',
+           left: '32.5px',
+           top: '-1000px',
+           width: '302.4643px',
+           height: '154px'
+      })),  
       transition('first => second', [
         animate('0.2s')
+      ]),
+       transition('second => third', [
+        animate('0.02s')
       ])
     ]),
       trigger('flyT4Up', [
@@ -153,8 +183,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '289.8368px',
           height: '63.75px'
       })),
+      state('third', style({
+          padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '-1000px',//
+          width: '289.8368px',
+          height: '63.75px'
+      })),        
       transition('first => second', [
         animate('0.2s')
+      ]),
+        transition('second => third', [
+        animate('0.02s')
       ])
     ]),
       trigger('flyBUp', [
@@ -182,12 +223,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
        width: '145.7205px',
        height: '145.7205px'
      })),
+       state('third', style({
+       padding: '0',
+       border: '0',
+       left: '109.1475px',
+       top: '1000px', 
+       width: '145.7205px',
+       height: '145.7205px'
+     })),
       transition('first => second', [
         animate('0.2s')
       ]),
        transition('second => rotate', [
         animate('2s', style({transform: 'rotate(1000deg)'})) // 음성인식으로 고치기
-      ])
+      ]),
+        transition('rotate => third', [
+        animate('0.02s')
+      ]),
     ])
   ]
   
@@ -196,7 +248,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 export class P1Page {
 
-  showText: boolean = true;
+  showText: string = "void"; // 이렇게 해도 되는건가?
   showCircleUp: string = "none";
   showQloUp: string = "none";
   showRecoUp: string = "first";
@@ -223,6 +275,11 @@ export class P1Page {
   }
   onNext(){
     this.showCircleUp = (this.showCircleUp === "second" ? "third" : "second");
+    this.showText = "disA";
+    this.showRecoUp = (this.showRecoUp === "second" ? "third" : "second")
+    this.showT3Up = (this.showT3Up === "second" ? "third" : "second");
+    this.showT4Up = (this.showT4Up === "second" ? "third" : "second");
+    this.showBUp = (this.showBUp === "rotate" ? "third" : "rotate");
   }
   
 }

@@ -25,13 +25,14 @@ import { Slides } from 'ionic-angular';
   animations : [
     trigger('lightsOnOff', [
       state('off', style({
-        backgroundColor: 'black'
-        
+         transform:  'rotate(0deg) translateY(150px) rotate(0deg)' 
       })),
       state('on', style({
-        backgroundColor: 'white'
+        transform: 'rotate(360deg) translateY(150px) rotate(-360deg)'
       })),
-      transition('off <=>on', [animate('2s', style({transform: 'rotate(90deg) translateX(150px) rotate(-90deg)'}))])
+      transition('off <=>on', [animate('3s'
+      )])
+      
     ])
   ]
 })
