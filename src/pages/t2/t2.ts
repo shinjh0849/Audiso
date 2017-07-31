@@ -4,39 +4,43 @@ import { Component,
          style,
          animate,
          group,
-         state
- } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+         state,
+         keyframes
+} from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 import { T3Page } from './../t3/t3';
 import { T10Page } from './../t10/t10';
 
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
-/**
- * Generated class for the T2Page page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-t2',
   templateUrl: 't2.html',
   animations : [
-    trigger('lightsOnOff', [
-      state('off', style({
-        backgroundColor: 'black'
+    trigger('bounceIn', [
+      state('bounceIn', style({
         
       })),
-      state('on', style({
-        backgroundColor: 'white'
-      })),
-      transition('off <=>on', [animate('2s', style({transform: 'rotate(90deg) translateX(150px) rotate(-90deg)'}))])
+      transition(':enter', [
+        animate(1000, keyframes([
+          style({opacity:1, transform: 'translateX(-100%)', offset: 0}),
+          style({opacity:1, transform: 'translateX(15px)', offset: 0.3}),
+          style({opacity:0, transform: 'translateX(0)', offset: 1.0})
+        ]))
+      ]),
+      transition(':leave', [
+        animate(1000, keyframes([
+          style({opacity:1, transform: 'translateX(0)', offset: 0}),
+          style({opacity:1, transform: 'translateX(-15px)', offset: 0.7}),
+          style({opacity:0, transform: 'translateX(100%)', offset: 1.0})
+        ]))
+      ])
     ])
   ]
 })
 export class T2Page {
-   roomState: string = "off";
+   isBounce: boolean = true;
 
   @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -56,6 +60,6 @@ export class T2Page {
     this.slides.slideTo(1);
   }
   toggle(){
-    this.roomState = (this.roomState === "off") ? "on" : "off";
+    this.isBounce = (this.isBounce === true) ? false : true;
   }
 }
