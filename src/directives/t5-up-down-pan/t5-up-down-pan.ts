@@ -8,8 +8,14 @@ export class T5UpDownPanDirective {
 
   @Input('startLeft') startLeft: any;
   @Input('startTop') startTop: any;
-  @Output() overdrag: any = new EventEmitter();
+
+  
+  @Output() overDrag: any = new EventEmitter();
+
+  @Output() dighdigh: any = new EventEmitter();
   triggered: boolean = false;
+
+
 
   constructor(public element: ElementRef, public renderer: Renderer, public domCtrl: DomController) {
 
@@ -25,9 +31,10 @@ export class T5UpDownPanDirective {
   }
 
   handlePan(ev) {
-    let newTop = ev.deltaY;
 
-   if (newTop >= 110 && !this.triggered) {
+
+
+   /* if (newTop >= 110 && !this.triggered) {
       this.triggered = true;
       this.domCtrl.write(() => {
         this.renderer.setElementStyle(this.element.nativeElement, 'top', 110 + 'px');
@@ -45,7 +52,7 @@ export class T5UpDownPanDirective {
         this.renderer.setElementStyle(this.element.nativeElement, 'top', 0 + 'px');
       })
       this.triggered = false;
-    }
+    } */
 
   }
 
