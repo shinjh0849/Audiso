@@ -1,7 +1,3 @@
-import { RecommendPricePage } from './../recommend-price/recommend-price';
-import { T4Page } from './../t4/t4';
-import { P1Page } from './../p1/p1';
-
 import { Component,
          trigger,
          transition,
@@ -12,22 +8,19 @@ import { Component,
  } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-
-
-
 /**
- * Generated class for the RecommendPage page.
+ * Generated class for the RecommendColorPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-recommend',
-  templateUrl: 'recommend.html',
+  selector: 'page-recommend-color',
+  templateUrl: 'recommend-color.html',
   animations : [
     // 가운데 아이콘과 그의 색깔 다른 친구들
-    trigger('middleCircleR', [
+    trigger('middleCircleS', [
       state('m', style({ 
         transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
         opacity: 0
@@ -38,12 +31,12 @@ import { NavController, NavParams } from 'ionic-angular';
       })),
       state('l', style({
         transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
-        opacity: 0
+        opacity: 1
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
     ]),
-    trigger('middleCircleM', [
+    trigger('middleCircleC', [
       state('m', style({ 
         transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
         opacity: 1
@@ -60,22 +53,7 @@ import { NavController, NavParams } from 'ionic-angular';
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
     ]),
-    trigger('middleCircleL', [
-      state('m', style({ 
-        transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
-        opacity: 0
-    })),
-      state('r', style({
-        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg) ',
-        opacity: 0
-      })),
-      state('l', style({
-        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg) ',
-        opacity: 1
-      })),
-      transition('m<=>r', [animate('0.3s')]),
-      transition('m<=>l', [animate('0.3s')])
-    ]),
+    
     trigger('middleCircle', [
       state('m', style({ 
         transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
@@ -94,52 +72,35 @@ import { NavController, NavParams } from 'ionic-angular';
     ]),
 
     //오른쪽 아이콘과 그의 색깔 다른 친구들
-     trigger('rightCircleR', [
+     trigger('rightCircleC', [
       state('m', style({ 
         transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
          opacity: 0
       })),
       state('r', style({
         transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
-         opacity: 1
+         opacity: 0
       })),
       state('l', style({
         transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
-         opacity: 0
+         opacity: 1
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
     ]),
 
-      trigger('rightCircleM', [
+      trigger('rightCircleS', [
       state('m', style({ 
         transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
          opacity: 1
       })),
       state('r', style({
         transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
-         opacity: 0
-      })),
-      state('l', style({
-        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
-         opacity: 0
-      })),
-      transition('m<=>r', [animate('0.3s')]),
-      transition('m<=>l', [animate('0.3s')])
-    ]),
-
-      trigger('rightCircleL', [
-      state('m', style({ 
-        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
-         opacity: 0
-      })),
-      state('r', style({
-        transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
-         opacity: 0
-      })),
-      state('l', style({
-        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
          opacity: 1
+      })),
+      state('l', style({
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         opacity: 0
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
@@ -163,7 +124,7 @@ import { NavController, NavParams } from 'ionic-angular';
     ]),
 
     //왼쪽 아이콘과 그의 색깔 다른 친구들
-    trigger('leftCircleR', [
+    trigger('leftCircleC', [
       state('m', style({ 
         transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
          opacity: 0
@@ -180,27 +141,10 @@ import { NavController, NavParams } from 'ionic-angular';
       transition('m<=>l', [animate('0.3s')]),
     ]),
 
-      trigger('leftCircleM', [
+      trigger('leftCircleS', [
         state('m', style({ 
           transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
            opacity: 1
-        })),
-        state('r', style({
-          transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
-           opacity: 0
-        })),
-        state('l', style({
-          transform: 'rotate(-60deg) translateY(-370px) rotate(60deg)',
-           opacity: 0
-        })),
-        transition('m<=>r', [animate('0.3s')]),
-        transition('m<=>l', [animate('0.3s')]),
-    ]),
-
-      trigger('leftCircleL', [
-        state('m', style({ 
-          transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
-           opacity: 0
         })),
         state('r', style({
           transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
@@ -233,13 +177,15 @@ import { NavController, NavParams } from 'ionic-angular';
 
   ]
 })
-export class RecommendPage {
-   roomState: string = "m";
+export class RecommendColorPage {
+
+  roomState: string = "m";
    panXi: number = 0;
    panXo: number = 0;
    inneerDefault = 136;
    outerDefault = 109;
    triggered: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -250,7 +196,7 @@ export class RecommendPage {
   }
   
   nextP(){
-    this.navCtrl.push(RecommendPricePage);
+    //this.navCtrl.push();
   }
 
 
@@ -285,4 +231,5 @@ export class RecommendPage {
         }
       }
   }
+
 }

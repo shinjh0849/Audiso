@@ -1,3 +1,5 @@
+import { RecommendColorPage } from './../pages/recommend-color/recommend-color';
+import { RecommendPricePage } from './../pages/recommend-price/recommend-price';
 
 import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
@@ -74,7 +76,9 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     ScreenPanDirective,
     P1UpslidingDirective,
     
-    RecommendPage
+    RecommendPage,
+    RecommendPricePage,
+    RecommendColorPage
     
     
     
@@ -104,7 +108,10 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     TestPage,
     AnimationPage,
     RecommendPage,
-    P1Page    
+    P1Page,
+    RecommendPricePage,
+    RecommendColorPage
+    
 
   ],
   providers: [
