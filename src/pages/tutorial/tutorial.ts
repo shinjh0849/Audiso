@@ -26,7 +26,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           height: '740px'
       })),
       transition('first => second', [
-        animate('1s')
+        animate('1.5s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -51,7 +51,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '57.25px'
       })),
       transition('first => second', [
-        animate('1s')
+        animate('1.5s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -76,7 +76,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '236px'
       })),
       transition('first => second', [
-        animate('1s')
+        animate('1.5s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -101,7 +101,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
          width: '134px'
       })),
       transition('first => second', [
-        animate('1s')
+        animate('1.5s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -126,7 +126,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '107px'
       })),
       transition('first => second', [
-        animate('1s')
+        animate('1.5s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -180,7 +180,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         animate('0.5s')
       ]),
       transition('second => disA', [
-        animate('0.01s')
+        animate('0.01s 1s')
       ])
     ]), 
       trigger('fly8', [
@@ -202,10 +202,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '125px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.6s')
       ]),
       transition('second => disA', [
-        animate('0.01s')
+        animate('0.01s 1s')
       ])
     ]), 
       trigger('fly9', [
@@ -230,8 +230,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         animate('0.5s')
       ]),
       transition('second => disA', [
-        animate('0.01s')
+        animate('1s', keyframes([
+           style({ transform: 'scale3d(1, 1, 1)', offset: 0.2}),
+           style({ transform: 'scale3d(1.2, 1.2, 1.2)', offset: 0.4}),
+           style({ transform: 'scale3d(1, 1, 1)', offset: 0.6}),
+           style({ transform: 'scale3d(1.3, 1.3, 1.3)', offset: 0.8}),
+           style({ transform: 'scale3d(1, 1, 1)', offset: 0.9}),
+           style({  opacity: 0 , offset: 1.0}),
+        ]))
       ])
+
     ]),         
       trigger('fly10', [
        state('disA', style({
@@ -255,7 +263,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         animate('0.5s')
       ]),
       transition('second => disA', [
-        animate('0.01s')
+        animate('0.01s 1s')
       ])
     ]), 
     ///////////////
@@ -278,7 +286,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '263.066px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.5s 1s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -303,7 +311,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '179.69675px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.6s 1s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -329,7 +337,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '84.61525px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.5s 1s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -354,7 +362,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '84.61525px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.5s 1s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -379,7 +387,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '68.75px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.5s 1s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -483,7 +491,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
           width: '179.69675px'
       })),
       transition('first => second', [
-        animate('0.5s')
+        animate('0.6s')
       ]),
       transition('second => disA', [
         animate('0.01s')
@@ -554,8 +562,9 @@ export class TutorialPage {
     this.show3 = (this.show3 === "first" ? "second" : "first");
     this.show4 = (this.show4 === "first" ? "second" : "first");
     this.show5 = (this.show5 === "first" ? "second" : "first");
-        this.xxx = this.defaultX;
-        this.yyy = this.defaultY;
+        
+    this.xxx = this.defaultX;
+    this.yyy = this.defaultY;
   }
   onLongPress(e){
     this.show2 = (this.show2 === "second" ? "disA" : "second");
@@ -571,8 +580,6 @@ export class TutorialPage {
   }
 
   onDoubleTap(){
-    // 두근두근하는거 해야한다.
-
 
     this.show7 = (this.show7 === "second" ? "disA" : "second");
     this.show8 = (this.show8 === "second" ? "disA" : "second");
@@ -589,12 +596,10 @@ export class TutorialPage {
 
 
   onNext(e){
-  
-
 
     if( e.deltaX >= 128.5 && !this.triggered){ 
         this.triggered = true;
-        this.xxx = 200;
+        this.xxx = 71.25; // 원래 200
         // 다음 에니메이션이 발생하게 한다.
         this.show11 = (this.show11 === "second" ? "disA" : "second");
         this.show12 = (this.show12 === "second" ? "disA" : "second");
@@ -608,9 +613,6 @@ export class TutorialPage {
         this.show20 = (this.show20 === "first" ? "second" : "first");
         this.show21 = (this.show21 === "first" ? "second" : "first");
         
-
-
-
      } else if (this.xxx < 195) { // 놓았을 때 원래 위치로 오게 하는 것
           this.xxx = this.defaultX + e.deltaX;
           if(e.isFinal == true){
@@ -622,13 +624,10 @@ export class TutorialPage {
   }
 
 onNext2(e){
-    //this.abc = this.defaultX + e.deltaX;
-    console.log(this.yyy);
-    console.log(e.deltaY);
 
     if( e.deltaY >= 110 && !this.triggered){ 
         this.triggered = true;
-        
+        this.yyy = 455;
         // 다음 에니메이션이 발생하게 한다.
         this.show17 = (this.show17 === "second" ? "disA" : "second");
         this.show18 = (this.show18 === "second" ? "disA" : "second");
