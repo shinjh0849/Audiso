@@ -34,7 +34,7 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 })
 export class MyApp {
-  rootPage:any = RecommendMaterialPage;
+  rootPage:any = Tutorial2Page;
 
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {

@@ -95,8 +95,8 @@ import { NavigationPage } from '../pages/navigation/navigation';
     RecommendPage,
     TutorialPage,
     RecommendPricePage,
-    RecommendColorPage
-    
+    RecommendColorPage,
+    Tutorial2Page
   ],
   imports: [
     BrowserModule,
@@ -134,7 +134,7 @@ import { NavigationPage } from '../pages/navigation/navigation';
     RecommendColorPage,
     RecommendPricePage,
     RecommendColorPage,
-    Tutorial2Page,
+    Tutorial2Page
 
   ],
   providers: [
