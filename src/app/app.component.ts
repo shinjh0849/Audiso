@@ -13,6 +13,12 @@ import { P1Page } from "../pages/p1/p1";
 
 import { SplashPage } from '../pages/splash/splash';
 import { RecommendPage } from '../pages/recommend/recommend';
+import { RecommendMaterialPage } from '../pages/recommend-material/recommend-material';
+import { RecommendProductPage } from '../pages/recommend-product/recommend-product';
+import { ProductColorPage } from '../pages/product-color/product-color';
+import { ProductSizePage } from '../pages/product-size/product-size';
+import { ProductConfirmPage } from '../pages/product-confirm/product-confirm';
+import { NavigationPage } from '../pages/navigation/navigation';
 
 
 
@@ -21,15 +27,15 @@ import { RecommendPage } from '../pages/recommend/recommend';
 
 })
 export class MyApp {
-  rootPage:any = RecommendPage;
+  rootPage:any = RecommendMaterialPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
 
       statusBar.styleDefault();
 
-      let splash = modalCtrl.create(SplashPage);
-      splash.present();
+      //let splash = modalCtrl.create(SplashPage);
+      //splash.present();
       
     });
   }
