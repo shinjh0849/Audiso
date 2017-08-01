@@ -33,10 +33,6 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 })
 export class MyApp {
-<<<<<<< HEAD
-  rootPage:any = Tutorial2Page;
-=======
->>>>>>> c6ec44335c185ef0a7ad9ae29f0687f5671d549e
 
   rootPage:any = RecommendPage;
 
