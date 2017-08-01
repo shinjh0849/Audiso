@@ -80,18 +80,10 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     P1UpslidingDirective,
     
     RecommendPage,
-<<<<<<< HEAD
     TutorialPage,
-=======
-<<<<<<< HEAD
->>>>>>> JihoMin
     RecommendPricePage,
-    RecommendColorPage
-    
-    
-=======
+    RecommendColorPage,
     TutorialPage
->>>>>>> origin/jihye
     
   ],
   imports: [
@@ -120,23 +112,14 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     AnimationPage,
     RecommendPage,
     P1Page,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    TutorialPage
-
-=======
-    RecommendPricePage,
-    RecommendColorPage
->>>>>>> JihoMin
-=======
-    RecommendPricePage,
-    RecommendColorPage
->>>>>>> JihoMin
-    
-=======
     TutorialPage,
-    Tutorial2Page
->>>>>>> origin/jihye
+    RecommendPricePage,
+    RecommendColorPage,
+    RecommendPricePage,
+    RecommendColorPage,
+    
+    TutorialPage,
+    Tutorial2Page,
 
   ],
   providers: [

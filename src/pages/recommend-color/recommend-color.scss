@@ -7,6 +7,21 @@ page-recommend-color {
         }
     }
 
+
+    .bgCircleShadow{
+        position: absolute;
+        left: -205px;
+        top: 355px;
+        width: 765px;
+    }
+
+    .recommendShadow{
+        position: absolute;
+        left: 68px;
+        top: 586px;
+         width: 226px;
+    }
+
     .bgCircle{
         position:   absolute;
         padding:    0;
@@ -34,7 +49,7 @@ page-recommend-color {
         border:     0;
         left:       32px;
         top:        157px; 
-        width:      197px;
+        width:      120px;
         height:     35px;
         
     }
