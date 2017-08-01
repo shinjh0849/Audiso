@@ -13,7 +13,7 @@ import { P1Page } from "../pages/p1/p1";
 
 import { SplashPage } from '../pages/splash/splash';
 import { RecommendPage } from '../pages/recommend/recommend';
-
+import { Tutorial2Page } from "../pages/tutorial2/tutorial2";
 
 
 @Component({
@@ -21,7 +21,7 @@ import { RecommendPage } from '../pages/recommend/recommend';
 
 })
 export class MyApp {
-  rootPage:any = RecommendPage;
+  rootPage:any = Tutorial2Page;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
@@ -29,7 +29,7 @@ export class MyApp {
       statusBar.styleDefault();
 
       let splash = modalCtrl.create(SplashPage);
-      splash.present();
+      //splash.present();
       
     });
   }

@@ -26,6 +26,8 @@ import { T10Page } from './../pages/t10/t10';
 import { T11Page } from '../pages/t11/t11';
 import { T12Page } from '../pages/t12/t12';
 
+import { Tutorial2Page } from '../pages/tutorial2/tutorial2';
+
 import { ScreenPanDirective } from './../directives/screen-pan/screen-pan';
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
 import { LongPressDirective } from '../directives/long-press/long-press';
@@ -37,13 +39,13 @@ import { TestPage } from "../pages/test/test";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationPage } from "../pages/animation/animation";
 
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
 import { P1Page } from "../pages/p1/p1";
 import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
-
-
+import { TutorialPage } from "../pages/tutorial/tutorial";
 
 
 @NgModule({
@@ -71,16 +73,21 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     TestPage, 
     AnimationPage,
     P1Page,
+    Tutorial2Page,
 
     T4ToRightDirective,
     ScreenPanDirective,
     P1UpslidingDirective,
     
     RecommendPage,
+<<<<<<< HEAD
     RecommendPricePage,
     RecommendColorPage
     
     
+=======
+    TutorialPage
+>>>>>>> origin/jihye
     
   ],
   imports: [
@@ -109,9 +116,14 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     AnimationPage,
     RecommendPage,
     P1Page,
+<<<<<<< HEAD
     RecommendPricePage,
     RecommendColorPage
     
+=======
+    TutorialPage,
+    Tutorial2Page
+>>>>>>> origin/jihye
 
   ],
   providers: [
@@ -120,7 +132,8 @@ import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
     TapnDoubleTapDirective,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     BarcodeScanner,
-    NativeAudio
+    NativeAudio,
+    TextToSpeech
   ]
 })
 export class AppModule { }

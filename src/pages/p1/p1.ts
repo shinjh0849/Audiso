@@ -61,7 +61,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
         animate('0.2s')
       ]),
       transition('second => third', [
-        animate('1.5s',  keyframes([
+        animate('0.4s',  keyframes([
         style({ top: '-100px', offset: 0.5}),
         style({ top: '369.5px', offset: 1.0})
       ]))
@@ -227,7 +227,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
        padding: '0',
        border: '0',
        left: '109.1475px',
-       top: '1000px', 
+       top: '497.5px', 
        width: '145.7205px',
        height: '145.7205px'
      })),
@@ -239,8 +239,58 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
       ]),
         transition('rotate => third', [
         animate('0.02s')
+      ])
+    ]),
+    trigger('flyNewReco', [
+      state('first', style({
+          padding: '0',
+          border: '0',
+          left: '32px',
+          top: '-100px', // 빠르기 조절
+          width: '107.4758px',
+          height: '16.75px'
+      })),
+        // 
+      state('second', style({
+          padding: '0',
+          border: '0',
+          left: '32px',
+          top: '124px',
+          width: '107px',
+          height: '17px'
+      })),
+        
+      transition('first => second', [
+        animate('0.2s 0.3s')
       ]),
+    ]),
+    
+    trigger('flyCate', [
+      state('first', style({
+          padding: '0',
+          border: '0',
+          left: '32.5px',
+          top: '-100px', // 빠르기 조절
+          width: '107.4758px',
+          height: '16.75px'
+      })),
+        // 
+      state('second', style({
+          padding: '0',
+          border: '0',
+          left: '32.px',
+          top: '157px',
+          width: '197px',
+          height: '35px'
+      })),
+        
+      transition('first => second', [
+        animate('0.2s 0.3s')
+      ]),
+      
     ])
+
+
   ]
   
 })
@@ -255,6 +305,8 @@ export class P1Page {
   showT3Up: string = "first";
   showT4Up: string = "first";
   showBUp: string = "first";
+  showNewReco: string = "first";
+  showCate: string = "first";
   
   ionViewDidLoad() {
     this.showCircleUp = (this.showCircleUp === "none" ? "first" : "none");
@@ -280,6 +332,9 @@ export class P1Page {
     this.showT3Up = (this.showT3Up === "second" ? "third" : "second");
     this.showT4Up = (this.showT4Up === "second" ? "third" : "second");
     this.showBUp = (this.showBUp === "rotate" ? "third" : "rotate");
+    this.showNewReco = (this.showNewReco === "first" ? "second" : "first");
+    this.showCate = (this.showCate === "first" ? "second" : "first");
+  
   }
   
 }
