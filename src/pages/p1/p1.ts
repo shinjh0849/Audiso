@@ -1,6 +1,7 @@
 import { Component, trigger, state, style, transition, animate, keyframes, group } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { RecommendPage } from '../recommend/recommend';
 
 @Component({
   selector: 'page-p1',
@@ -403,7 +404,8 @@ export class P1Page {
   showBUp: string = "first";
   showNewReco: string = "first";
   showCate: string = "first";
-  
+   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
   ionViewDidLoad() {
     this.showUQ = (this.showUQ === "first" ? "second" : "first");
     this.showT1 = (this.showT1 === "first" ? "second" : "first");
@@ -440,9 +442,10 @@ export class P1Page {
     this.showBUp = (this.showBUp === "rotate" ? "third" : "rotate");
     this.showNewReco = (this.showNewReco === "first" ? "second" : "first");
     this.showCate = (this.showCate === "first" ? "second" : "first");
-   
+    this.navCtrl.push(RecommendPage);
   }
-  
+
+
 }
 
 

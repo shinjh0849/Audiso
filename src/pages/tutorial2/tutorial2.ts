@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { DomController } from 'ionic-angular';
 
+import { P1Page } from '../p1/p1';
+
 @Component({
   selector: 'page-tutorial2',
   templateUrl: 'tutorial2.html',
@@ -370,6 +372,7 @@ export class Tutorial2Page {
   // 다같이 오른쪽으로 날아가야 하는데 아직 안함
   lastPage() {
     this.startState = "last";
+    this.navCtrl.push(P1Page);
   }
 
 

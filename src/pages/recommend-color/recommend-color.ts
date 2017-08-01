@@ -7,6 +7,7 @@ import { Component,
          state
  } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { RecommendMaterialPage } from "../recommend-material/recommend-material";
 
 /**
  * Generated class for the RecommendColorPage page.
@@ -196,7 +197,7 @@ export class RecommendColorPage {
   }
   
   nextP(){
-    //this.navCtrl.push();
+    this.navCtrl.push(RecommendMaterialPage);
   }
 
 

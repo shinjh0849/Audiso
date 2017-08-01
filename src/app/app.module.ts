@@ -132,8 +132,7 @@ import { NavigationPage } from '../pages/navigation/navigation';
     TutorialPage,
     RecommendPricePage,
     RecommendColorPage,
-    RecommendPricePage,
-    RecommendColorPage,
+    RecommendMaterialPage,
     Tutorial2Page
 
   ],
