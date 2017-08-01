@@ -45,7 +45,14 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
 import { P1Page } from "../pages/p1/p1";
 import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
-import { TutorialPage } from "../pages/tutorial/tutorial";
+import { RecommendMaterialPage } from '../pages/recommend-material/recommend-material';
+import { RecommendProductPage } from '../pages/recommend-product/recommend-product';
+import { ProductColorPage } from '../pages/product-color/product-color';
+import { ProductSizePage } from '../pages/product-size/product-size';
+import { ProductConfirmPage } from '../pages/product-confirm/product-confirm';
+import { NavigationPage } from '../pages/navigation/navigation';
+
+
 
 
 @NgModule({
@@ -73,25 +80,21 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     TestPage, 
     AnimationPage,
     P1Page,
-    Tutorial2Page,
+    RecommendMaterialPage,
+    RecommendProductPage,
+    ProductColorPage,
+    ProductSizePage,
+    ProductConfirmPage,
+    NavigationPage,
 
     T4ToRightDirective,
     ScreenPanDirective,
     P1UpslidingDirective,
     
     RecommendPage,
-<<<<<<< HEAD
-    TutorialPage,
-=======
-<<<<<<< HEAD
->>>>>>> JihoMin
+
     RecommendPricePage,
     RecommendColorPage
-    
-    
-=======
-    TutorialPage
->>>>>>> origin/jihye
     
   ],
   imports: [
@@ -120,23 +123,13 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     AnimationPage,
     RecommendPage,
     P1Page,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    TutorialPage
+    RecommendProductPage,
+    ProductColorPage,
+    ProductSizePage,
+    ProductConfirmPage,
+    NavigationPage,
+    P1Page    
 
-=======
-    RecommendPricePage,
-    RecommendColorPage
->>>>>>> JihoMin
-=======
-    RecommendPricePage,
-    RecommendColorPage
->>>>>>> JihoMin
-    
-=======
-    TutorialPage,
-    Tutorial2Page
->>>>>>> origin/jihye
 
   ],
   providers: [
