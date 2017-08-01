@@ -1,4 +1,3 @@
-import { AniiPage } from './../anii/anii';
 import { Component } from '@angular/core';
 import { App, NavController, NavParams, Platform } from 'ionic-angular';
 
@@ -64,14 +63,5 @@ export class HomePage {
     this.nativeAudio.unload('test1');
   }
 
-  bounce(){
-    
-  }
-
-  //애니메이션 페이지 시험용
-  onPress(){
-    this.navCtrl.push(AniiPage);
-  }
-  
       
 }

@@ -1,5 +1,3 @@
-
-import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -33,14 +31,13 @@ import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pa
 import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
 import { TestPage } from "../pages/test/test";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AnimationPage } from "../pages/animation/animation";
-
 import { NativeAudio } from '@ionic-native/native-audio';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
 import { P1Page } from "../pages/p1/p1";
 import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
 import { TutorialPage } from "../pages/tutorial/tutorial";
+import { NfcPage } from "../pages/nfc/nfc";
 
 
 
@@ -68,8 +65,8 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     ShortPressDirective,
     T5UpDownPanDirective,
     TestPage, 
-    AnimationPage,
     P1Page,
+    NfcPage,
 
     T4ToRightDirective,
     ScreenPanDirective,
@@ -104,10 +101,10 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     T11Page,
     T12Page,
     TestPage,
-    AnimationPage,
     RecommendPage,
     P1Page,
-    TutorialPage
+    TutorialPage,
+    NfcPage
 
     
 
