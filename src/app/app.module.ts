@@ -1,3 +1,4 @@
+import { TutorialPage } from './../pages/tutorial/tutorial';
 import { RecommendColorPage } from './../pages/recommend-color/recommend-color';
 import { RecommendPricePage } from './../pages/recommend-price/recommend-price';
 
@@ -92,16 +93,10 @@ import { NavigationPage } from '../pages/navigation/navigation';
     P1UpslidingDirective,
     
     RecommendPage,
-<<<<<<< HEAD
 
-    RecommendPricePage,
-    RecommendColorPage
-=======
-    TutorialPage,
     RecommendPricePage,
     RecommendColorPage,
     TutorialPage
->>>>>>> JihoMin
     
   ],
   imports: [
@@ -130,15 +125,13 @@ import { NavigationPage } from '../pages/navigation/navigation';
     AnimationPage,
     RecommendPage,
     P1Page,
-<<<<<<< HEAD
     RecommendProductPage,
     ProductColorPage,
     ProductSizePage,
     ProductConfirmPage,
     NavigationPage,
-    P1Page    
+    P1Page,
 
-=======
     TutorialPage,
     RecommendPricePage,
     RecommendColorPage,
@@ -147,7 +140,6 @@ import { NavigationPage } from '../pages/navigation/navigation';
     
     TutorialPage,
     Tutorial2Page,
->>>>>>> JihoMin
 
   ],
   providers: [
