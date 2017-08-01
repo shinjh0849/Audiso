@@ -1,3 +1,4 @@
+import { RecommendPricePage } from './../recommend-price/recommend-price';
 import { T4Page } from './../t4/t4';
 import { P1Page } from './../p1/p1';
 
@@ -12,6 +13,8 @@ import { Component,
 import { NavController, NavParams } from 'ionic-angular';
 
 
+
+
 /**
  * Generated class for the RecommendPage page.
  *
@@ -23,48 +26,196 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-recommend',
   templateUrl: 'recommend.html',
   animations : [
-    trigger('lightsOnOff', [
+    // 가운데 아이콘과 그의 색깔 다른 친구들
+    trigger('middleCircleR', [
       state('m', style({ 
-        transform: 'rotate(0deg) translateY(-336px) rotate(0deg)'
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
+        opacity: 0
       })),
       state('r', style({
-        transform: 'rotate(30deg) translateY(-336px) rotate(-30deg)'
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
+        opacity: 1
       })),
       state('l', style({
-        transform: 'rotate(-30deg) translateY(-336px) rotate(30deg)'
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+        opacity: 0
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')])
+    ]),
+    trigger('middleCircleM', [
+      state('m', style({ 
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+        opacity: 1
+      })),
+      state('r', style({
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg) ',
+        opacity: 0
+      })),
+      state('l', style({
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+        opacity: 0
+        
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')])
+    ]),
+    trigger('middleCircleL', [
+      state('m', style({ 
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
+        opacity: 0
+    })),
+      state('r', style({
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg) ',
+        opacity: 0
+      })),
+      state('l', style({
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg) ',
+        opacity: 1
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')])
+    ]),
+    trigger('middleCircle', [
+      state('m', style({ 
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg) ',
+        
+    })),
+      state('r', style({
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg) ',
+        
+      })),
+      state('l', style({
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg) ',
+        
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
     ]),
 
-     trigger('apfhd', [
+    //오른쪽 아이콘과 그의 색깔 다른 친구들
+     trigger('rightCircleR', [
       state('m', style({ 
-        transform: 'rotate(30deg) translateY(-336px) rotate(-30deg)'
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
+         opacity: 1
       })),
       state('r', style({
-        transform: 'rotate(60deg) translateY(-336px) rotate(-60deg)'
+        transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
+         opacity: 1
       })),
       state('l', style({
-        transform: 'rotate(0deg) translateY(-336px) rotate(0deg)'
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         opacity: 0
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')])
     ]),
 
-    trigger('digh', [
+      
+
+      trigger('rightCircleL', [
       state('m', style({ 
-        transform: 'rotate(-30deg) translateY(-336px) rotate(30deg)'
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
+         opacity: 0
       })),
       state('r', style({
-        transform: 'rotate(0deg) translateY(-336px) rotate(0deg)'
+        transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
+         opacity: 0
       })),
       state('l', style({
-        transform: 'rotate(-60deg) translateY(-336px) rotate(60deg)'
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         opacity: 1
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')])
+    ]),
+
+    trigger('rightCircle', [
+      state('m', style({ 
+        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
+         
+      })),
+      state('r', style({
+        transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
+         
+      })),
+      state('l', style({
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')])
+    ]),
+
+    //왼쪽 아이콘과 그의 색깔 다른 친구들
+    trigger('leftCircleR', [
+      state('m', style({ 
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+         opacity: 0
+      })),
+      state('r', style({
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         opacity: 1
+      })),
+      state('l', style({
+        transform: 'rotate(-60deg) translateY(-370px) rotate(60deg)',
+         opacity: 0
       })),
       transition('m<=>r', [animate('0.3s')]),
       transition('m<=>l', [animate('0.3s')]),
-      transition('l => m', [animate('0.3s')]),
-    ])
+    ]),
+
+      trigger('leftCircleM', [
+        state('m', style({ 
+          transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+           opacity: 1
+        })),
+        state('r', style({
+          transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+           opacity: 0
+        })),
+        state('l', style({
+          transform: 'rotate(-60deg) translateY(-370px) rotate(60deg)',
+           opacity: 0
+        })),
+        transition('m<=>r', [animate('0.3s')]),
+        transition('m<=>l', [animate('0.3s')]),
+    ]),
+
+      trigger('leftCircleL', [
+        state('m', style({ 
+          transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+           opacity: 0
+        })),
+        state('r', style({
+          transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+           opacity: 0
+        })),
+        state('l', style({
+          transform: 'rotate(-60deg) translateY(-370px) rotate(60deg)',
+           opacity: 1
+        })),
+        transition('m<=>r', [animate('0.3s')]),
+        transition('m<=>l', [animate('0.3s')]),
+    ]),
+
+     trigger('leftCircle', [
+      state('m', style({ 
+        transform: 'rotate(-30deg) translateY(-370px) rotate(30deg)',
+         
+      })),
+      state('r', style({
+        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
+         
+      })),
+      state('l', style({
+        transform: 'rotate(-60deg) translateY(-370px) rotate(60deg)',
+         
+      })),
+      transition('m<=>r', [animate('0.3s')]),
+      transition('m<=>l', [animate('0.3s')]),
+    ]),
+
   ]
 })
 export class RecommendPage {
@@ -84,7 +235,7 @@ export class RecommendPage {
   }
   
   nextP(){
-    this.navCtrl.push(T4Page);
+    this.navCtrl.push(RecommendPricePage);
   }
 
 
@@ -92,6 +243,7 @@ export class RecommendPage {
       console.log(this.triggered);
       console.log(this.roomState);
       if(e.deltaX >= 50 && this.triggered == false){
+        // 오른쪽으로 넘기기 발생
         this.triggered = true;
         this.panXi = this.inneerDefault;
         if(this.roomState == 'l')
@@ -101,6 +253,7 @@ export class RecommendPage {
 
         
       } else if (e.deltaX <= -50 && this.triggered == false){
+        //왼 쪽으로 넘기기 발생
         this.triggered = true;
         this.panXi = this.inneerDefault;
         if(this.roomState == 'r')
@@ -109,6 +262,7 @@ export class RecommendPage {
           this.roomState = 'l'; 
         
       } else {
+        //넘기기 발생 안했을 때, 조이스틱 움직이는 코드
         this.panXi = this.inneerDefault + e.deltaX;
         if(e.isFinal == true){
           this.panXi = this.inneerDefault;

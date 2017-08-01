@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+import { RecommendColorPage } from './../pages/recommend-color/recommend-color';
+import { RecommendPricePage } from './../pages/recommend-price/recommend-price';
+
+import { AniiPage } from './../pages/anii/anii';
+>>>>>>> master
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -22,6 +29,9 @@ import { T10Page } from './../pages/t10/t10';
 import { T11Page } from '../pages/t11/t11';
 import { T12Page } from '../pages/t12/t12';
 
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { Tutorial2Page } from '../pages/tutorial2/tutorial2';
+
 import { ScreenPanDirective } from './../directives/screen-pan/screen-pan';
 import { DoubleTapDirective } from '../directives/double-tap/double-tap';
 import { LongPressDirective } from '../directives/long-press/long-press';
@@ -31,13 +41,28 @@ import { T5UpDownPanDirective } from '../directives/t5-up-down-pan/t5-up-down-pa
 import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
 import { TestPage } from "../pages/test/test";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
+=======
+import { AnimationPage } from "../pages/animation/animation";
+
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+>>>>>>> master
 import { NativeAudio } from '@ionic-native/native-audio';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QRcodePage } from '../pages/q-rcode/q-rcode';
 import { P1Page } from "../pages/p1/p1";
 import { P1UpslidingDirective } from '../directives/p1-upsliding/p1-upsliding';
+<<<<<<< HEAD
 import { TutorialPage } from "../pages/tutorial/tutorial";
 import { NfcPage } from "../pages/nfc/nfc";
+=======
+import { RecommendMaterialPage } from '../pages/recommend-material/recommend-material';
+import { RecommendProductPage } from '../pages/recommend-product/recommend-product';
+import { ProductColorPage } from '../pages/product-color/product-color';
+import { ProductSizePage } from '../pages/product-size/product-size';
+import { ProductConfirmPage } from '../pages/product-confirm/product-confirm';
+import { NavigationPage } from '../pages/navigation/navigation';
+>>>>>>> master
 
 
 
@@ -66,17 +91,26 @@ import { NfcPage } from "../pages/nfc/nfc";
     T5UpDownPanDirective,
     TestPage, 
     P1Page,
+<<<<<<< HEAD
     NfcPage,
+=======
+    RecommendMaterialPage,
+    RecommendProductPage,
+    ProductColorPage,
+    ProductSizePage,
+    ProductConfirmPage,
+    NavigationPage,
+>>>>>>> master
 
     T4ToRightDirective,
     ScreenPanDirective,
     P1UpslidingDirective,
     
     RecommendPage,
-    TutorialPage
-    
-    
-    
+    TutorialPage,
+    RecommendPricePage,
+    RecommendColorPage,
+    Tutorial2Page
   ],
   imports: [
     BrowserModule,
@@ -103,10 +137,23 @@ import { NfcPage } from "../pages/nfc/nfc";
     TestPage,
     RecommendPage,
     P1Page,
+<<<<<<< HEAD
     TutorialPage,
     NfcPage
 
     
+=======
+    RecommendProductPage,
+    ProductColorPage,
+    ProductSizePage,
+    ProductConfirmPage,
+    NavigationPage,
+    TutorialPage,
+    RecommendPricePage,
+    RecommendColorPage,
+    RecommendMaterialPage,
+    Tutorial2Page
+>>>>>>> master
 
   ],
   providers: [
@@ -115,7 +162,8 @@ import { NfcPage } from "../pages/nfc/nfc";
     TapnDoubleTapDirective,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     BarcodeScanner,
-    NativeAudio
+    NativeAudio,
+    TextToSpeech
   ]
 })
 export class AppModule { }

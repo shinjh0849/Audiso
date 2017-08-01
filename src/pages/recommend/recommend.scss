@@ -6,14 +6,28 @@ page-recommend {
         }
     }
 
+    .bgCircleShadow{
+        position: absolute;
+        left: -205px;
+        top: 355px;
+        width: 765px;
+    }
+
+    .recommendShadow{
+        position: absolute;
+        left: 68px;
+        top: 586px;
+        width: 226px;
+    }
+
     .bgCircle{
         position:   absolute;
         padding:    0;
         border:     0;
-        left:       -180px;
-        top:        325.5px;    
-        width:      672.5px;
-        height:     672.5px;
+        left:       -190px;
+        top:        369.5px;    
+        width:      740px;
+        height:     740px;
         
     }
 
@@ -40,11 +54,11 @@ page-recommend {
 
     .outer{
         position:   absolute;
-        margin-bottom: 600px;
+       
         padding:    0;
         border:     0;
         left:       79px;
-        top:        561px;
+        top:        595px;
         width:      201px;
         height:     201px;
         
@@ -56,7 +70,7 @@ page-recommend {
         padding:    0;
         border:     0;
         left:       79px;
-        top:        561px;
+        top:        595px;
         width:      201px;
         
     }
@@ -66,11 +80,9 @@ page-recommend {
         position:   absolute;
         padding:    0;
         border:     0;
-        left:       258px;
-        top:        631px;
+        left:       79px;
+        top:        595px;
         width:      201px;
-        height:     201px;
-        
     }
 
     .interactionOuter{

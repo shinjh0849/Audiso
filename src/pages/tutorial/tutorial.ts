@@ -1,6 +1,7 @@
 import { Component, trigger, state, style, transition, animate, keyframes, group } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { Tutorial2Page } from '../tutorial2/tutorial2';
 @Component({
   selector: 'page-tutorial',
   templateUrl: 'tutorial.html',
@@ -555,7 +556,9 @@ export class TutorialPage {
   defaultX: number = 71.25;
   defaultY: number = 455;
   triggered: boolean = false;
-  
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
   ionViewDidLoad() {
     this.show1 = (this.show1 === "first" ? "second" : "first");
     this.show2 = (this.show2 === "first" ? "second" : "first");
@@ -636,6 +639,8 @@ onNext2(e){
         this.show21 = (this.show21 === "second" ? "disA" : "second");
 
         this.show6 = (this.show6 === "second" ? "disA" : "second");
+        // 다음 페이지로 넘어감
+        this.navCtrl.push(Tutorial2Page);
 
      } else if (this.yyy < 565) { // 놓았을 때 원래 위치로 오게 하는 것
           this.yyy = this.defaultY + e.deltaY;

@@ -37,7 +37,7 @@ export class T4ToRightDirective {
 
 
   handlePan(ev){
-      this.aaa = ev.deltaX;
+   /*   this.aaa = ev.deltaX;
       let newLeft = ev.deltaX;
       let newTop = ev.center.y;
       let margin = ev.center.x - this.element.nativeElement.offsetLeft;
@@ -47,7 +47,7 @@ export class T4ToRightDirective {
 
       console.log(this.dighdigh);
 
-    /* if(newLeft > 135 && !this.triggered){
+     if(newLeft > 135 && !this.triggered){
         this.triggered = true;
         this.domCtrl.write( () => {
             this.renderer.setElementStyle(this.element.nativeElement, 'left', 135 + 'px');
