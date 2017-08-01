@@ -28,14 +28,17 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 
 
-
 @Component({
   templateUrl: 'app.html'
 
 })
 export class MyApp {
+<<<<<<< HEAD
   rootPage:any = Tutorial2Page;
+=======
+>>>>>>> c6ec44335c185ef0a7ad9ae29f0687f5671d549e
 
+  rootPage:any = RecommendPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
@@ -46,6 +49,11 @@ export class MyApp {
      // let splash = modalCtrl.create(SplashPage);
      // splash.present();
 
+     // let splash = modalCtrl.create(SplashPage);
+     // splash.present();
+      let splash = modalCtrl.create(SplashPage);
+      //splash.present();
+      
     });
   }
 
