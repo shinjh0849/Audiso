@@ -26,6 +26,7 @@ import { T10Page } from './../pages/t10/t10';
 import { T11Page } from '../pages/t11/t11';
 import { T12Page } from '../pages/t12/t12';
 
+import { TutorialPage } from '../pages/tutorial/tutorial';
 import { Tutorial2Page } from '../pages/tutorial2/tutorial2';
 
 import { ScreenPanDirective } from './../directives/screen-pan/screen-pan';
@@ -92,16 +93,9 @@ import { NavigationPage } from '../pages/navigation/navigation';
     P1UpslidingDirective,
     
     RecommendPage,
-<<<<<<< HEAD
-
-    RecommendPricePage,
-    RecommendColorPage
-=======
     TutorialPage,
     RecommendPricePage,
-    RecommendColorPage,
-    TutorialPage
->>>>>>> JihoMin
+    RecommendColorPage
     
   ],
   imports: [
@@ -130,24 +124,17 @@ import { NavigationPage } from '../pages/navigation/navigation';
     AnimationPage,
     RecommendPage,
     P1Page,
-<<<<<<< HEAD
     RecommendProductPage,
     ProductColorPage,
     ProductSizePage,
     ProductConfirmPage,
     NavigationPage,
-    P1Page    
-
-=======
     TutorialPage,
     RecommendPricePage,
     RecommendColorPage,
     RecommendPricePage,
     RecommendColorPage,
-    
-    TutorialPage,
     Tutorial2Page,
->>>>>>> JihoMin
 
   ],
   providers: [
