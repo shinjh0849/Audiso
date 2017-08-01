@@ -13,6 +13,7 @@ import { P1Page } from "../pages/p1/p1";
 
 import { SplashPage } from '../pages/splash/splash';
 import { RecommendPage } from '../pages/recommend/recommend';
+<<<<<<< HEAD
 
 import { TutorialPage } from "../pages/tutorial/tutorial";
 import { T2Page } from "../pages/t2/t2";
@@ -27,6 +28,11 @@ import { ProductConfirmPage } from '../pages/product-confirm/product-confirm';
 import { NavigationPage } from '../pages/navigation/navigation';
 
 
+=======
+import { TutorialPage } from "../pages/tutorial/tutorial";
+import { T2Page } from "../pages/t2/t2";
+import { Tutorial2Page } from "../pages/tutorial2/tutorial2";
+>>>>>>> JihoMin
 
 
 @Component({
@@ -34,18 +40,30 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 })
 export class MyApp {
+<<<<<<< HEAD
   rootPage:any = RecommendMaterialPage;
 
+=======
+  rootPage:any = RecommendPage;
+>>>>>>> JihoMin
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
 
       statusBar.styleDefault();
 
+<<<<<<< HEAD
 
      // let splash = modalCtrl.create(SplashPage);
      // splash.present();
 
+=======
+     // let splash = modalCtrl.create(SplashPage);
+     // splash.present();
+      let splash = modalCtrl.create(SplashPage);
+      //splash.present();
+      
+>>>>>>> JihoMin
     });
   }
 

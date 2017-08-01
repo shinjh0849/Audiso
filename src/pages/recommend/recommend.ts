@@ -97,7 +97,7 @@ import { NavController, NavParams } from 'ionic-angular';
      trigger('rightCircleR', [
       state('m', style({ 
         transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
-         opacity: 0
+         opacity: 1
       })),
       state('r', style({
         transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
@@ -111,22 +111,7 @@ import { NavController, NavParams } from 'ionic-angular';
       transition('m<=>l', [animate('0.3s')])
     ]),
 
-      trigger('rightCircleM', [
-      state('m', style({ 
-        transform: 'rotate(30deg) translateY(-370px) rotate(-30deg)',
-         opacity: 1
-      })),
-      state('r', style({
-        transform: 'rotate(60deg) translateY(-370px) rotate(-60deg)',
-         opacity: 0
-      })),
-      state('l', style({
-        transform: 'rotate(0deg) translateY(-370px) rotate(0deg)',
-         opacity: 0
-      })),
-      transition('m<=>r', [animate('0.3s')]),
-      transition('m<=>l', [animate('0.3s')])
-    ]),
+      
 
       trigger('rightCircleL', [
       state('m', style({ 

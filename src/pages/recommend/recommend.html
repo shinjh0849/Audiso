@@ -1,19 +1,21 @@
 <ion-content t4-to-right (pan) = "moveButton($event)" (doubleTap) = "nextP()">
-  <div class = "bgCircle"><img src = "assets/21-24/보라 원.png"></div>
+  <div class = "bgCircleShadow"><img src = "assets/bgCircleShadow.png"></div>
+  <div class = "bgCircle"><img src = "assets/revisedPurpleCircle.png"></div>
   <div class = "recommend"><img src = "assets/21-24/Recommend.png"></div>
   <div class = "category"><img src = "assets/21-24/text1_21_24.png"></div>
  
-  
-  <div class = "bottom" [@rightCircle] = "roomState"><img src = "assets/21-24/bottom_button_blue.png"></div>
+  <div class = "recommendShadow" [@rightCircle] = "roomState"><img src = "assets/categoryShadow.png" ></div>
+  <div class = "bottom" [@rightCircle] = "roomState"><img src = "assets/21-24/bottom_button.png"></div>
   <div class = "bottom" [@rightCircleR] = "roomState"><img src = "assets/21-24/bottom_button_blue.png"></div>
-  <div class = "bottom" [@rightCircleM] = "roomState"><img src = "assets/21-24/bottom_button_blue.png"></div>
   <div class = "bottom" [@rightCircleL] = "roomState"><img src = "assets/21-24/bottom_button.png"></div>
 
+  <div class = "recommendShadow" [@middleCircle] = "roomState"><img src = "assets/categoryShadow.png"></div>
   <div class = "outer" [@middleCircle] = "roomState"><img src = "assets/21-24/outer_button.png"></div>
   <div class = "outer" [@middleCircleR] = "roomState"><img src = "assets/21-24/outer_button_blue.png"></div>
   <div class = "outer" [@middleCircleM] = "roomState"><img src = "assets/21-24/outer_button.png"></div>
   <div class = "outer" [@middleCircleL] = "roomState"><img src = "assets/21-24/outer_button_pink.png"></div>
   
+  <div class = "recommendShadow" [@leftCircle] = "roomState"><img src = "assets/categoryShadow.png"></div>
   <div class = "top" [@leftCircle] = "roomState"><img src = " assets/21-24/top_button_pink.png"></div>
   <div class = "top" [@leftCircleR] = "roomState"><img src = " assets/21-24/top_button.png"></div>
   <div class = "top" [@leftCircleM] = "roomState"><img src = " assets/21-24/top_button_pink.png"></div>
