@@ -1,3 +1,5 @@
+import { RecommendColorPage } from './../pages/recommend-color/recommend-color';
+import { RecommendPricePage } from './../pages/recommend-price/recommend-price';
 
 import { AniiPage } from './../pages/anii/anii';
 import { BrowserModule } from '@angular/platform-browser';
@@ -76,7 +78,9 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     P1UpslidingDirective,
     
     RecommendPage,
-    TutorialPage
+    TutorialPage,
+    RecommendPricePage,
+    RecommendColorPage
     
     
     
@@ -107,8 +111,13 @@ import { TutorialPage } from "../pages/tutorial/tutorial";
     AnimationPage,
     RecommendPage,
     P1Page,
+<<<<<<< HEAD
     TutorialPage
 
+=======
+    RecommendPricePage,
+    RecommendColorPage
+>>>>>>> JihoMin
     
 
   ],
