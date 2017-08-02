@@ -215,6 +215,9 @@
             "platforms": [
                 "android"
             ]
-        }
+        },
+        "platforms": [
+            "android"
+        ]
     }
 }
