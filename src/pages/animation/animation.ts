@@ -1,5 +1,7 @@
+import { IndoorAtlas } from 'cordova-plugin-indooratlas/www/IndoorAtlas';
 import { Component, trigger, state, style, transition, animate, keyframes, group } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 
 
 @Component({
@@ -27,6 +29,9 @@ export class AnimationPage {
   showDiv: boolean = true;
   toggleDiv(){
     this.showDiv = this.showDiv ? false : true;
+  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public indoor: IndoorAtlas) {
+    IndoorAtlas.initialize();
   }
 }
 

@@ -30,12 +30,12 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 @Component({
   templateUrl: 'app.html'
-
+  
 })
 export class MyApp {
 
   rootPage:any = TutorialPage;
-
+  
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
 

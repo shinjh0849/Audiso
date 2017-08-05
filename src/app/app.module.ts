@@ -1,3 +1,4 @@
+import { IndoorAtlas } from 'cordova-plugin-indooratlas/www/IndoorAtlas';
 import { RecommendColorPage } from './../pages/recommend-color/recommend-color';
 import { RecommendPricePage } from './../pages/recommend-price/recommend-price';
 
@@ -39,6 +40,8 @@ import { T4ToRightDirective } from '../directives/t4-to-right/t4-to-right';
 import { TestPage } from "../pages/test/test";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationPage } from "../pages/animation/animation";
+
+
 
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { NativeAudio } from '@ionic-native/native-audio';
