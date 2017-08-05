@@ -28,14 +28,20 @@ import { NavigationPage } from '../pages/navigation/navigation';
 
 
 
+
 @Component({
   templateUrl: 'app.html'
   
 })
 export class MyApp {
 
+<<<<<<< HEAD
   rootPage:any = TutorialPage;
   
+=======
+  rootPage:any = HomePage;
+
+>>>>>>> b3d0f6365906548034511dabf00cbaa4d067cbbc
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController) {
     platform.ready().then(() => {
 
